@@ -1,0 +1,12 @@
+.header {
+    height: var(--header-height);
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+    }
+
+}

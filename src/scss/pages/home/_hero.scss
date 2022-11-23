@@ -1,3 +1,18 @@
+@use '../../components/buttons'as button;
+@use '../../components/links'as link;
+
+body {
+    background-color: var(--color-bg);
+}
+
 .hero {
-    min-height: 100vh; //temp
+    min-height: 100vh;
+
+    &__title {
+        font-size: var(--font-size-6)
+    }
+
+    &__btn {
+        @include button.standard;
+    }
 }

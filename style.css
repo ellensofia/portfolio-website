@@ -1,1 +1,136 @@
-:root{--section-gap: section;--section-inner-gap: calc( var(--section-gap) * 0.75 );--section-inner-gap-small: calc( var(--section-gap) * 0.5 );--grid-gap: 3rem;--grid-container: minmax(30px, 1fr) [inner-start] minmax(0, 78rem) [inner-end] minmax(30px, 1fr);--grid-inner: repeat(12, 1fr);--content-width: 55rem;--font-serif: serif;--font-sans: sans-serif;--font-base: 1rem;--font-scale: 1.25;--font-size-1: var(--font-base);--font-size-2: calc( var(--font-size-1) * var(--font-scale) );--font-size-3: calc( var(--font-size-2) * var(--font-scale) );--font-size-4: calc( var(--font-size-3) * var(--font-scale) );--font-size-5: calc( var(--font-size-4) * var(--font-scale) );--font-size-6: calc( var(--font-size-5) * var(--font-scale) );--color-primary: #666;--color-secondary: #fff;--color-complement: #888;--color-accent: #3694F2}*{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%}h1{font-size:var(--font-size-6)}.link{background-color:var(--color-primary);color:blue;padding:1rem 1.5rem;border-radius:30px;display:inline-block;text-decoration:none;font-size:var(--font-size-1)}.hero{min-height:100vh}/*# sourceMappingURL=style.css.map */
+/* Global Variables */
+:root {
+  --section-gap: $section-gap;
+  --section-inner-gap: calc( var(--section-gap) * 0.75 );
+  --section-inner-gap-small: calc( var(--section-gap) * 0.5 );
+  --grid-gap: 3rem;
+  --grid-container: minmax(30px, 130px) [inner-start] minmax(0, 100%) [inner-end] minmax(30px, 130px);
+  --grid-inner: repeat(12, 1fr);
+  --content-width: 55rem;
+  --header-height: 6.25rem;
+  --font-serif: serif;
+  --font-sans: "Libre Franklin", sans-serif;
+  --font-base: 1.6rem;
+  --font-scale: 1.25;
+  --font-size-1: var(--font-base);
+  --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
+  --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
+  --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
+  --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
+  --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+  --color-primary: rgb(26, 26, 26);
+  --color-secondary: rgb(50, 50, 50);
+  --color-complement: #888;
+  --color-accent: #f29a36;
+  --color-bg: #f4dcc2;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: var(--font-size-6);
+}
+
+h2 {
+  font-size: var(--font-size-5);
+}
+
+h3 {
+  font-size: var(--font-size-4);
+}
+
+h4 {
+  font-size: var(--font-size-3);
+}
+
+h5 {
+  font-size: var(--font-size-2);
+}
+
+h6 {
+  font-size: var(--font-size-1);
+}
+
+p {
+  font-size: var(--font-size-1);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header, .hero {
+  display: grid;
+  grid-template-columns: var(--grid-container);
+}
+.header__inner, .hero__inner {
+  grid-column: inner;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  height: var(--header-height);
+}
+
+.menu__list {
+  display: flex;
+  gap: 2rem;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+.hero {
+  min-height: 100vh;
+}
+.hero__title {
+  font-size: var(--font-size-6);
+}
+.hero__btn {
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 1.6rem 2.4rem;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--font-size-2);
+  border: 2px solid var(--color-accent);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2.2;
+}
+.hero__btn:hover {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
