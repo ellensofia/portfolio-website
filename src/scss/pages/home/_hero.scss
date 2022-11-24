@@ -1,5 +1,7 @@
 @use '../../components/buttons'as button;
 @use '../../components/links'as link;
+@use '../../tools/responsive';
+
 
 body {
     background-color: var(--color-bg);
@@ -8,11 +10,48 @@ body {
 .hero {
     min-height: 100vh;
 
+    &__background {
+        position: absolute;
+        top: 3vh;
+        z-index: -1;
+    }
+
+    &__copy {
+        max-width: 75vw;
+    }
+
+
     &__title {
-        font-size: var(--font-size-6)
+        text-transform: uppercase;
+        font-size: var(--font-size-6);
+        margin: 0 0 2rem 0;
+    }
+
+    &__subtitle {
+        margin: 0 0 3.5rem 0;
+        font-size: var(--font-size-4);
+
     }
 
     &__btn {
         @include button.standard;
     }
+
+    @include responsive.max(60em) {
+
+            &__title {
+                font-size: var(--font-size-5);
+            }
+        }
+
+    @include responsive.max(30em) {
+            &__title {
+                font-size: var(--font-size-4);
+            }
+
+            &__subtitle {
+                font-size: var(--font-size-3);
+            }
+        }
+    
 }

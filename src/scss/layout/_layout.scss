@@ -1,4 +1,6 @@
-.header, .hero {
+@use '../tools/responsive';
+
+.header, .hero, .about {
     display: grid;
     grid-template-columns: var(--grid-container);
 
@@ -7,6 +9,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    @include responsive.max(30em) {
+        grid-template-columns: var(--grid-container-small);
     }
 }
 // .hero {

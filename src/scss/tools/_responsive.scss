@@ -9,7 +9,7 @@
 
 
 // Max width
-@mixin max($breakpoint: 55rem) {
+@mixin max($breakpoint: 80rem) {
     @media screen and ( max-width: $breakpoint) {
         @content;
     }

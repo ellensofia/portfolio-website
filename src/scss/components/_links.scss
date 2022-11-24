@@ -1,17 +1,27 @@
 // Link style and hover effect
 
-@mixin standard($background: var(--color-primary), $color: var(--color-primary)) {
+@mixin standard($color: var(--color-primary)) {
     color: $color;
     text-decoration: none;
     font-size: var(--font-size-1);
     position: relative;
     transition: 0.5s ease;
+    text-transform: uppercase;
+    font-weight: 600;
     
-    &:hover {
+    &::after {
         content:'';
-        position: relative;
+        position: absolute;
         height: 2px;
         width: 100%;
-        background-color: $background;
+        transform: scaleX(0);
+        bottom: -3px;
+        left: 0;
+        background-color: $color;
+        transition: .4s linear;
+    }
+    
+    &:hover::after {
+        transform: scaleX(1);
     }
 }

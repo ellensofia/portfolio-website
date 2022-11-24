@@ -5,6 +5,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -14,8 +15,13 @@ html {
 body {
     margin: 0;
     padding: 0;
+    transition: .4s ease;
 }
 
 img {
     max-width: 100%;
+}
+
+a, .btn {
+    cursor: pointer;
 }

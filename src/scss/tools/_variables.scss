@@ -1,13 +1,11 @@
-    //section gap
-    $section-gap: 7rem;
-
 /* Global Variables */
 :root {
-    --section-gap: $section-gap;
+    --section-gap: 10rem;
     --section-inner-gap: calc( var(--section-gap) * 0.75 );
     --section-inner-gap-small: calc( var(--section-gap) * 0.5 );
     --grid-gap: 3rem;
-    --grid-container: minmax(30px, 130px) [inner-start] minmax(0, 100%) [inner-end] minmax(30px, 130px);
+    --grid-container: minmax(60px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(60px, 1fr);
+    --grid-container-small: minmax(30px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(30px, 1fr);
     --grid-inner: repeat(12, 1fr);
 
     --content-width: 55rem;
@@ -19,7 +17,7 @@
 
     --font-base: 1.8rem;
     --font-scale: 1.33;
-
+    --line-height: 1.5;
 
     --font-size-1: var(--font-base); // 18px
     --font-size-2: calc( var(--font-size-1) * var(--font-scale) ); // 23.94px

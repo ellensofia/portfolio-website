@@ -4,6 +4,17 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-title);
+    margin: 0;
+}
+
+p {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height);
+    color: var(--color-primary);
+}
+
+span {
+    color: var(--color-primary);
 }
 
 h1 {
@@ -27,10 +38,6 @@ h5 {
 }
 
 h6 {
-    font-size: var(--font-size-1);
-}
-
-p {
     font-size: var(--font-size-1);
 }
 

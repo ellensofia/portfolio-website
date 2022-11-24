@@ -1,0 +1,56 @@
+@use '../../tools/responsive';
+
+.about {
+
+    &__copy {
+        max-width: 44vw;
+        padding-left: 4rem;
+        position: relative;
+
+        &__title {
+            margin: 2rem 0;
+        }
+
+        &__text {
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: var(--color-title);
+        }
+    }
+
+    .language {
+        margin-bottom: var(--section-gap);
+
+        &__title {
+            margin-bottom: 4rem;
+        }
+
+        &__sv, &__en {
+            margin: 2rem 0;            
+        }
+
+        .sv, .en {
+            font-size: var(--font-size-2);
+        }
+    }
+
+    @include responsive.max(60em) {
+
+        &__inner {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__copy {
+            margin-bottom: var(--section-gap);
+            max-width: 70vw;
+        }
+    }
+}
