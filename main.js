@@ -1,5 +1,5 @@
 window.document.addEventListener('DOMContentLoaded', main)
-let currentLang = 'swe';
+let currentLang = 'sv';
 
 
 function main() {
@@ -19,6 +19,7 @@ function addEventListeners() {
     darkmodeBtn.addEventListener('click', darkmode);
     langBtn = document.querySelector('.language-button');
 
+    // When you click on translate language of the site
     langBtn.onclick = translate;
 }
 
