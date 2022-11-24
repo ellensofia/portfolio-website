@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
     <script src="darkmode.js"></script>
+    <script src="translate.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;600;700;900&display=swap" rel="stylesheet">
@@ -16,31 +17,53 @@
 
     <header class="header">
         <div class="header__inner">
-            <img src="assets/icons/" alt="moon icon" class="darkmode" id="darkmode">
+            <img src="assets/icons/darkmode.svg" alt="moon icon" class="darkmode" id="darkmode">
 
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="" class="menu__link">Om mig</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Mina projekt</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Kontakt</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link1">Om mig</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link2">Mina projekt</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link3">Kontakt</a></li>
                 </ul>
                 <div class="menu__btn">
                     <div class="menu__burger"></div>
+                </div>
+
+                <div class="language-button">
+                    <span class="sv-btn sv-btn--active">SV</span>
+                    <span class="en-btn">EN</span>
                 </div>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <img src="" alt="" class="hero__background">
+        <img src="assets/images/spray.png" alt="" class="hero__background">
         <div class="hero__inner">
             <div class="hero__copy">
-                <h1 class="hero__title">Hej! Jag heter Ellen Dahlgren</h1>
+                <h1 class="hero__title">Hej! <br> Jag heter Ellen Dahlgren</h1>
                 <h2 class="hero__subtitle">Front end developer student</h2>
                 <a href="" class="hero__btn btn">Kontakta mig</a>
             </div>
 
             <img src="" alt="" class="hero__img">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about__inner">
+            <div class="about__copy">
+                <h2 class="about__title">Om mig</h2>
+                <p class="about__text">Front end student med passion för UI-design. När jag för några år sedan fann webbdesign fastnade jag direkt. Nu läser jag mitt första år på front end developer på medieinstitutet. Sedan innan har jag en ettårig utbildning i webbdesign och webbutveckling. Jag är en nyfiken och driven student som ständigt vill utvecklas. När jag inte sitter och kodar gillar jag att träna, resa och skulptera.</p>
+            </div>
+
+            <div class="language">
+                <h3 class="language__title">Språk</h3>
+                <h4 class="language__sv">Svenska</h4>
+                <span class="sv">Modersmål</span>
+                <h4 class="language__en">Engelska</h4>
+                <span class="en">Goda kundskaper</span>
+            </div>
         </div>
     </section>
     
