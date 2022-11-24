@@ -1,5 +1,13 @@
+@use '../components/links'as link;
+
+
 .header {
     height: var(--header-height);
+
+
+    .darkmode {
+        height: 24px;
+    }
 }
 
 .menu {
@@ -7,6 +15,10 @@
     &__list {
         display: flex;
         gap: 2rem;
+    }
+
+    &__link {
+        @include link.standard;
     }
 
 }

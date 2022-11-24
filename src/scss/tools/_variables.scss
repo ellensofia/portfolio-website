@@ -11,26 +11,39 @@
     --grid-inner: repeat(12, 1fr);
 
     --content-width: 55rem;
-    --header-height: 6.25rem;
+    --header-height: 6.85rem;
 
     // Add fonts here
     --font-serif: serif;
     --font-sans: 'Libre Franklin', sans-serif;
 
-    --font-base: 1.6rem;
-    --font-scale: 1.25;
+    --font-base: 1.8rem;
+    --font-scale: 1.33;
 
-    --font-size-1: var(--font-base);
-    --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
-    --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
-    --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
-    --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
-    --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+
+    --font-size-1: var(--font-base); // 18px
+    --font-size-2: calc( var(--font-size-1) * var(--font-scale) ); // 23.94px
+    --font-size-3: calc( var(--font-size-2) * var(--font-scale) ); // 31.84px
+    --font-size-4: calc( var(--font-size-3) * var(--font-scale) ); // 42.35px
+    --font-size-5: calc( var(--font-size-4) * var(--font-scale) ); // 56.32px
+    --font-size-6: calc( var(--font-size-5) * var(--font-scale) ); // 74.9px
 
     // Colors
     --color-primary: rgb(26, 26, 26);
+    --color-title: rgb(26, 26, 26);
     --color-secondary: rgb(50, 50, 50);
     --color-complement: #888;
     --color-accent: #f29a36;
     --color-bg: #f4dcc2;
+
+}
+
+// Darkmode colors
+body.darkmode-active {
+    --color-primary: rgb(255, 255, 255);
+    --color-title: rgb(255, 255, 255);
+    --color-secondary: rgb(50, 50, 50);
+    --color-complement: #888;
+    --color-accent: #244c41;
+    --color-bg: #1a1a1a;
 }
