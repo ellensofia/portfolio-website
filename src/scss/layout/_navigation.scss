@@ -3,12 +3,31 @@
 
 
 .header {
-    height: var(--header-height);
+    // height: var(--header-height);
     position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 80;
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: var(--header-height);
+
+        justify-content: space-between;
+    }
+
+    &__right {
+        display: flex;
+    }
 
 
     .darkmode {
+        padding-left: 6rem;
         height: 24px;
+        z-index: 100;
+
     }
 }
 
@@ -32,6 +51,9 @@
     &__btn {
         width: 2.2rem;
         height: 2.2rem;
+        margin-right: 2rem;
+        z-index: 100;
+
     }
 
     &__burger {
@@ -56,47 +78,71 @@
             top: 1.6rem;
         }
     }
-    .language-button {
-        color: var(--color-title);
-        font-size: var(--font-size-1);
-        white-space: nowrap;
+    
+}
+.language-button {
+    color: var(--color-title);
+    font-size: var(--font-size-1);
+    white-space: nowrap;
+    padding-right: 6rem;
+    z-index: 100;
 
-        .sv-btn {
-            position: relative;
-            padding-right: 0.4rem;
 
-            &::after {
-                position: absolute;
-                content: '/';
-                padding-left: 0.2rem;
-            }
+    .sv-btn {
+        position: relative;
+        padding-right: 0.4rem;
+
+        &::after {
+            position: absolute;
+            content: '/';
+            padding-left: 0.2rem;
         }
+    }
 
-        .en-btn {
-            padding-left: 0.4rem;
+    .en-btn {
+        padding-left: 0.4rem;
 
-            &--active {
-                font-weight: 700;
-            }
-        }
-
-        .lang--active {
+        &--active {
             font-weight: 700;
         }
-
     }
 
-    @include responsive.max(60em) {
-
-        &__link {
-            display: none;
-        }
-
-        &__burger {
-            display: block;
-        }
-
-
+    .lang--active {
+        font-weight: 700;
     }
 
+    
+}
+@include responsive.max(60em) {
+.header {
+
+    &__inner {
+
+    }
+}
+
+.menu {
+    &__list {
+        display: none;
+
+        &--open {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background-color: #F5F4F2;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            gap: 2.5rem;
+            margin: 0;
+            transition: all 0.4s 0.2s ease-in-out;
+        }
+    }
+    &__burger {
+        display: block;
+    }
+    }
 }
