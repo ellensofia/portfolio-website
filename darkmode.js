@@ -9,5 +9,5 @@ function darkmode() {
         darkmodeBtn.src = 'assets/icons/lightmode.svg';
     }
     body.classList.toggle('darkmode-active');
-
+    
 }

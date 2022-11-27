@@ -1,6 +1,6 @@
 @use '../tools/responsive';
 
-.header, .hero, .about {
+.hero, .about {
     display: grid;
     grid-template-columns: var(--grid-container);
 
@@ -15,12 +15,3 @@
         grid-template-columns: var(--grid-container-small);
     }
 }
-// .hero {
-//     display: grid;
-//     grid-template-columns: var(--grid-container);
-
-//     &__inner {
-//         grid-column: inner;
-//         display: flex;
-//     }
-// }

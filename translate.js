@@ -3,12 +3,16 @@ function translate() {
 
     if (currentLang == 'sv') {
         const svBtn = document.querySelector('.sv-btn');
-        svBtn.classList.toggle('enBtn--active');
+        const enBtn = document.querySelector('.en-btn');
+        svBtn.classList.remove('lang--active');
+        enBtn.classList.add('lang--active');
         currentLang = 'en';
     } 
     else if (currentLang == 'en'){
+        const svBtn = document.querySelector('.sv-btn');
         const enBtn = document.querySelector('.en-btn');
-        enBtn.classList.toggle('enBtn--active');
+        enBtn.classList.remove('lang--active');
+        svBtn.classList.add('lang--active');
         currentLang = 'sv';
     }
     
@@ -59,11 +63,11 @@ function textContentInEng() {
         link1 = 'About me',
         link2 = 'My projects',
         link3 = 'Contact',
-        heroTitle = 'Hello, my name is Ellen Dahlgren',
-        heroDubtitle = 'Front end developer student',
+        heroTitle = "Hello, I'm",
+        heroSubtitle = 'Front end developer student',
         heroBtn = 'Contact me',
         aboutTitle = 'About me',
-        aboutText = "Frontend student with a passion for UI design. When I found web design a few years ago, I was instantly hooked. I am now studying my first year as a front end developer at the media institute. Since then, I have a one-year education in web design and web development at Karlskoga folk university.In the past, I have mainly worked in care, both in nursing homes and as a personal assistant. In addition to that, I have worked as a gardener.",
+        aboutText = "Frontend student with a passion for UI design. When I found web design a few years ago, I was instantly hooked. I am now studying my first year as a front end developer at the media institute. Since then, I have a one-year education in web design and web development at Karlskoga folk university.",
         aboutTitle2 = 'Work experience',
         aboutText2 = "I have previously worked in nursing homes and as a personal assistant. I have also worked as a gardener and at a secondhand shop in Uppsala.",
         langTitle = 'Languages',
@@ -79,7 +83,7 @@ function textContentInSwe() {
         link1 = 'Om mig',
         link2 = 'Mina projekt',
         link3 = 'Kontakt',
-        heroTitle = 'Hej, jag heter Ellen Dahlgren',
+        heroTitle = 'Hej, mitt namn är',
         heroDubtitle = 'Front end developer student',
         heroBtn = 'Kontakta mig',
         aboutTitle = 'Om mig',
