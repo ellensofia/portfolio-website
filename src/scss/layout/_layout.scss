@@ -1,6 +1,6 @@
 @use '../tools/responsive';
 
-.hero, .about, .projects {
+.hero, .about {
     display: grid;
     grid-template-columns: var(--grid-container);
 

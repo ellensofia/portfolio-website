@@ -1,36 +1,77 @@
-.projects__inner {
-    flex-wrap: wrap;
-    gap: var(--grid-gap);
+.projects {
+    margin-left: 60px;
+    margin-bottom: var(--section-gap);
+
+    
+    &__inner {
+        gap: var(--grid-gap);
+        flex-direction: column;
+    }
+    
+    &__container {
+        gap: var(--section-inner-gap-xsmall);
+        display: flex;
+        overflow-x: scroll;
+        // overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin-bottom: var(--section-inner-gap-xsmall);
+    }
+
+        
+    &__subtitle {
+        font-weight: 300;
+        margin-bottom: var(--section-inner-gap-xsmall);
+
+    }
+
 }
 
 .project {
-    min-width: 45rem;
-    max-width: 620px;
+    min-width: 50rem;
     flex: 1;
+    transition: .5s ease;
+    position: relative;
+    overflow-y: hidden;
 
     &__img {
-    background: black;
     min-width: 45rem;
-}
-
-&__lower {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    & a {
-        display: flex;
-        align-items: center;
-        font-size: var(--font-size-1);
-        color: #000;
-        gap: 1rem;
+    z-index: 2;
     }
+
+    &:hover {
+        scale: 1.05;
+    }
+
+        &__lower {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: var(--section-inner-gap-xsmall);
+        
+        & a {
+            display: flex;
+            align-items: center;
+            font-size: var(--font-size-1);
+            color: #000;
+            gap: 1rem;
+        }
 }
 
 &__copy {
     width: 100%;
-    padding: var(--section-inner-gap-xsmall);
     background-color: #fff;
+    height: 4rem;
+    transition: 0.3s ease;
+    z-index: -1;
+    opacity: 0;
+    padding-left: var(--section-inner-gap-xsmall);
+
 }
 
 &__title {
@@ -44,6 +85,13 @@
 &__tools {
     font-size: var(--font-size-1);
     font-weight: 600;
+    white-space: nowrap;
+}
+
+&__lower {
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
 }
 
 .github-icon {
@@ -53,6 +101,16 @@
 
 &__copy p, h4, a, span {
         color: var(--color-dark);
-
     }
+}
+
+.visible {
+    height: 29.741rem;
+    padding: var(--section-inner-gap-xsmall);
+    opacity: 1;
+
+    .project__lower {
+        position: unset;
+    }
+    
 }
