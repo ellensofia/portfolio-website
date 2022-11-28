@@ -7,6 +7,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-title);
     margin: 0;
+    text-transform: uppercase;
 }
 
 p {
@@ -70,4 +71,14 @@ ul {
         font-size: var(--font-size-2);
     }
 
+}
+
+#outline {
+    transition: 0.2s 0.3s ease;
+    color: var(--color-bg);
+    text-shadow: -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary), -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
+    &:hover {
+        color: var(--color-primary);
+        text-shadow: none;
+    }
 }

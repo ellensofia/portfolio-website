@@ -35,7 +35,7 @@ body.darkmode-active {
   --color-title: rgb(255, 255, 255);
   --color-secondary: rgb(50, 50, 50);
   --color-complement: #888;
-  --color-accent: #244c41;
+  --color-accent: #4291ab;
   --color-bg: #1a1a1a;
 }
 
@@ -76,6 +76,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-title);
   margin: 0;
+  text-transform: uppercase;
 }
 
 p {
@@ -134,6 +135,16 @@ ul {
     font-size: var(--font-size-2);
   }
 }
+#outline {
+  transition: 0.2s 0.3s ease;
+  color: var(--color-bg);
+  text-shadow: -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary), -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
+}
+#outline:hover {
+  color: var(--color-primary);
+  text-shadow: none;
+}
+
 .hero, .about, .contact {
   display: grid;
   grid-template-columns: var(--grid-container);
@@ -203,7 +214,7 @@ ul {
   transform: scaleX(0);
   bottom: -3px;
   left: 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   transition: 0.4s linear;
 }
 .menu__link:hover::after {
@@ -321,8 +332,8 @@ body {
   letter-spacing: 2.2;
 }
 .hero__btn:hover {
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
   background-color: transparent;
 }
 .about {
@@ -423,7 +434,7 @@ body {
   transition: 0.3s ease;
   z-index: -1;
   opacity: 0;
-  padding-left: var(--section-inner-gap-xsmall);
+  padding: 0 var(--section-inner-gap-xsmall);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
