@@ -1,9 +1,9 @@
 /* Global Variables */
 :root {
-  --section-gap: 10rem;
+  --section-gap: 15rem;
   --section-inner-gap: calc( var(--section-gap) * 0.75 );
   --section-inner-gap-small: calc( var(--section-gap) * 0.5 );
-  --section-inner-gap-xsmall: calc( var(--section-gap) * 0.30 );
+  --section-inner-gap-xsmall: calc( var(--section-gap) * 0.25 );
   --grid-gap: 5.5rem;
   --grid-container: minmax(60px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(60px, 1fr);
   --grid-container-small: minmax(30px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(30px, 1fr);
@@ -134,20 +134,23 @@ ul {
     font-size: var(--font-size-2);
   }
 }
-.hero, .about {
+.hero, .about, .contact {
   display: grid;
   grid-template-columns: var(--grid-container);
 }
-.hero__inner, .about__inner {
+.hero__inner, .about__inner, .contact__inner {
   grid-column: inner;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 @media screen and (max-width: 30em) {
-  .hero, .about {
+  .hero, .about, .contact {
     grid-template-columns: var(--grid-container-small);
   }
+}
+
+.hero__inner {
+  align-items: center;
 }
 
 .header {
@@ -390,7 +393,6 @@ body {
   min-width: 50rem;
   flex: 1;
   transition: 0.5s ease;
-  position: relative;
   overflow-y: hidden;
 }
 .project__img {
@@ -398,13 +400,14 @@ body {
   z-index: 2;
 }
 .project:hover {
-  scale: 1.05;
+  scale: 1.025;
+  width: 900px;
 }
 .project__lower {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--section-inner-gap-xsmall);
+  padding-top: 16px;
 }
 .project__lower a {
   display: flex;
@@ -416,21 +419,19 @@ body {
 .project__copy {
   width: 100%;
   background-color: #fff;
-  height: 4rem;
+  height: 0;
   transition: 0.3s ease;
   z-index: -1;
   opacity: 0;
   padding-left: var(--section-inner-gap-xsmall);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project__tools {
   font-size: var(--font-size-1);
   font-weight: 600;
   white-space: nowrap;
-}
-.project__lower {
-  position: absolute;
-  bottom: 0;
-  height: 3rem;
 }
 .project .github-icon {
   width: 2.4rem;
@@ -441,12 +442,16 @@ body {
 }
 
 .visible {
-  height: 29.741rem;
+  height: 31.741rem;
   padding: var(--section-inner-gap-xsmall);
   opacity: 1;
 }
-.visible .project__lower {
-  position: unset;
+
+.contact {
+  margin-bottom: var(--section-inner-gap);
+}
+.contact__title {
+  margin-bottom: var(--section-inner-gap-xsmall);
 }
 
 /*# sourceMappingURL=style.css.map */
