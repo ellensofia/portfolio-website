@@ -1,0 +1,58 @@
+.projects__inner {
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+}
+
+.project {
+    min-width: 45rem;
+    max-width: 620px;
+    flex: 1;
+
+    &__img {
+    background: black;
+    min-width: 45rem;
+}
+
+&__lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & a {
+        display: flex;
+        align-items: center;
+        font-size: var(--font-size-1);
+        color: #000;
+        gap: 1rem;
+    }
+}
+
+&__copy {
+    width: 100%;
+    padding: var(--section-inner-gap-xsmall);
+    background-color: #fff;
+}
+
+&__title {
+    
+}
+
+&__text {
+    
+}
+
+&__tools {
+    font-size: var(--font-size-1);
+    font-weight: 600;
+}
+
+.github-icon {
+    width: 2.4rem;
+    height: auto;
+}
+
+&__copy p, h4, a, span {
+        color: var(--color-dark);
+
+    }
+}
