@@ -6,6 +6,7 @@
     &__inner {
         gap: var(--grid-gap);
         flex-direction: column;
+        cursor: grab;
     }
     
     &__container {

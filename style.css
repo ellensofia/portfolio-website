@@ -149,17 +149,17 @@ ul {
   text-shadow: none;
 }
 
-.hero, .about, .contact {
+.hero, .about, .contact, .programming {
   display: grid;
   grid-template-columns: var(--grid-container);
 }
-.hero__inner, .about__inner, .contact__inner {
+.hero__inner, .about__inner, .contact__inner, .programming__inner {
   grid-column: inner;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 40em) {
-  .hero, .about, .contact {
+  .hero, .about, .contact, .programming {
     grid-template-columns: var(--grid-container-small);
   }
 }
@@ -425,6 +425,7 @@ body {
 .projects__inner {
   gap: var(--grid-gap);
   flex-direction: column;
+  cursor: grab;
 }
 .projects__container {
   gap: var(--section-inner-gap-xsmall);
@@ -505,6 +506,27 @@ body {
 }
 .contact__title {
   margin-bottom: var(--section-inner-gap-xsmall);
+}
+
+.programming {
+  margin-bottom: var(--section-gap);
+}
+.programming__inner {
+  flex-direction: column;
+}
+.programming__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--section-inner-gap-xsmall);
+}
+.programming__title {
+  margin-bottom: var(--section-inner-gap-xsmall);
+}
+.programming__text {
+  margin-bottom: var(--section-inner-gap-xsmall);
+}
+.programming__item {
+  width: 7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

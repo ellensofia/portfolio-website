@@ -1,0 +1,31 @@
+@use '../../tools/responsive';
+@use '../../tools/variables';
+
+.programming {
+    margin-bottom: var(--section-gap);
+
+    &__inner {
+        flex-direction: column;
+
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--section-inner-gap-xsmall);
+    }
+
+    &__title {
+        margin-bottom: var(--section-inner-gap-xsmall);
+    }
+
+    &__text {
+        margin-bottom: var(--section-inner-gap-xsmall);
+    }
+
+    &__item {
+        width: 7rem;
+    }
+
+
+}
