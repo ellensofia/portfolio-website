@@ -29,7 +29,7 @@
     .language {
 
         &__title {
-            margin-bottom: 4rem;
+            margin-bottom: var(--section-inner-gap-xsmall);
         }
 
         &__sv, &__en {
@@ -41,13 +41,7 @@
         }
     }
 
-    @include responsive.max(961px) {
-        .language {
-            // margin-bottom: var(--section-gap);
-        }
-    }
-
-
+    // 961px
     @include responsive.max(60em) {
 
         &__inner {
@@ -58,6 +52,12 @@
         &__copy {
             margin-bottom: var(--section-gap);
             max-width: 70vw;
+        }
+    }
+
+    @include responsive.max(680px) {
+        &__copy {
+            max-width: 90%;
         }
     }
 }

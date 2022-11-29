@@ -1,3 +1,4 @@
+@use '../tools/responsive';
 /* Global Variables */
 :root {
     --section-gap: 15rem;
@@ -8,8 +9,6 @@
     --grid-container: minmax(60px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(60px, 1fr);
     --grid-container-small: minmax(30px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(30px, 1fr);
     --grid-inner: repeat(12, 1fr);
-
-    --content-width: 55rem;
     --header-height: 6.85rem;
 
     // Add fonts here
@@ -46,4 +45,12 @@ body.darkmode-active {
     --color-complement: #888;
     --color-accent: #4291ab;
     --color-bg: #1a1a1a;
+}
+
+// Change margins on smaller screens
+
+@include responsive.max(60em) {
+    body {
+        --section-gap: 10rem;
+    }
 }

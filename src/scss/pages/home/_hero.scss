@@ -10,16 +10,30 @@ body {
 .hero {
     min-height: 100vh;
 
+    &__inner {
+        align-items: center;
+    }
+    
     &__background {
         position: absolute;
         top: 3vh;
         z-index: -1;
     }
-
+    
     &__copy {
         max-width: 75vw;
+        position: relative;
     }
 
+    &__icon-down {
+        position: absolute;
+        width: 4vw;
+        bottom: 15px;
+        right: 48%;
+        padding: 1rem;
+        border-radius: 20rem;
+        border: 2px solid black;
+    }
 
     &__title {
         text-transform: uppercase;
@@ -34,10 +48,20 @@ body {
         @include button.standard;
     }
 
-    @include responsive.max(60em) {
+    @include responsive.max(976px) {
 
-            &__title {
-                // font-size: var(--font-size-5);
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__copy {
+            padding: 29vh 0;
+        }
+
+            &__img {
+                width: 30vw; 
+                min-width: 25rem;
+                padding-bottom: var(--section-inner-gap-small);
             }
         }
 

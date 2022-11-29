@@ -8,7 +8,6 @@
   --grid-container: minmax(60px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(60px, 1fr);
   --grid-container-small: minmax(30px, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(30px, 1fr);
   --grid-inner: repeat(12, 1fr);
-  --content-width: 55rem;
   --header-height: 6.85rem;
   --font-serif: serif;
   --font-sans: "Libre Franklin", sans-serif;
@@ -39,6 +38,11 @@ body.darkmode-active {
   --color-bg: #1a1a1a;
 }
 
+@media screen and (max-width: 60em) {
+  body {
+    --section-gap: 10rem;
+  }
+}
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -154,16 +158,23 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 40em) {
   .hero, .about, .contact {
     grid-template-columns: var(--grid-container-small);
   }
 }
 
-.hero__inner {
-  align-items: center;
+@media screen and (max-width: 40em) {
+  #darkmode {
+    padding-left: 30px;
+  }
+  .header .language-button {
+    padding-right: 30px;
+  }
+  #projects {
+    margin-left: 30px;
+  }
 }
-
 .header {
   position: fixed;
   width: 100%;
@@ -303,6 +314,9 @@ body {
 .hero {
   min-height: 100vh;
 }
+.hero__inner {
+  align-items: center;
+}
 .hero__background {
   position: absolute;
   top: 3vh;
@@ -310,6 +324,16 @@ body {
 }
 .hero__copy {
   max-width: 75vw;
+  position: relative;
+}
+.hero__icon-down {
+  position: absolute;
+  width: 4vw;
+  bottom: 15px;
+  right: 48%;
+  padding: 1rem;
+  border-radius: 20rem;
+  border: 2px solid black;
 }
 .hero__title {
   text-transform: uppercase;
@@ -336,6 +360,19 @@ body {
   color: var(--color-primary);
   background-color: transparent;
 }
+@media screen and (max-width: 976px) {
+  .hero__inner {
+    flex-wrap: wrap;
+  }
+  .hero__copy {
+    padding: 29vh 0;
+  }
+  .hero__img {
+    width: 30vw;
+    min-width: 25rem;
+    padding-bottom: var(--section-inner-gap-small);
+  }
+}
 .about {
   margin-bottom: var(--section-gap);
 }
@@ -357,7 +394,7 @@ body {
   background-color: var(--color-title);
 }
 .about .language__title {
-  margin-bottom: 4rem;
+  margin-bottom: var(--section-inner-gap-xsmall);
 }
 .about .language__sv, .about .language__en {
   margin: 2rem 0;
@@ -373,6 +410,11 @@ body {
   .about__copy {
     margin-bottom: var(--section-gap);
     max-width: 70vw;
+  }
+}
+@media screen and (max-width: 680px) {
+  .about__copy {
+    max-width: 90%;
   }
 }
 
@@ -448,7 +490,7 @@ body {
   width: 2.4rem;
   height: auto;
 }
-.project__copy p, .project h4, .project a, .project span {
+.project__copy p, .project h4, .project h5, .project a, .project span {
   color: var(--color-dark);
 }
 

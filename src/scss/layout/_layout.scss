@@ -10,11 +10,23 @@
         justify-content: space-between;
     }
 
-    @include responsive.max(30em) {
+    // Changes left and right margins of the grid container on smaller screens
+    @include responsive.max(40em) {
         grid-template-columns: var(--grid-container-small);
     }
 }
 
-.hero__inner {
-    align-items: center;
+// Changes left and right margins of content on smaller screens
+@include responsive.max(40em) {
+    #darkmode {
+        padding-left: 30px;
+    }
+
+    .header .language-button {
+        padding-right: 30px;
+    }
+
+    #projects {
+        margin-left: 30px;
+    }
 }
