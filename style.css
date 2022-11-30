@@ -528,5 +528,10 @@ body {
 .programming__item {
   width: 7rem;
 }
+@media screen and (max-width: 60em) {
+  .programming__list {
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
