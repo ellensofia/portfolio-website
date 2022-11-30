@@ -2,17 +2,26 @@
 @use '../../tools/variables';
 
 .programming {
-    margin-bottom: var(--section-gap);
+
+    &__title {
+        max-width: 44vw;
+
+    }
+
+    &__text {
+        max-width: 44vw;
+        margin-top: none;
+    }
 
     &__inner {
         flex-direction: column;
-
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: var(--section-inner-gap-xsmall);
+        padding: 1rem;
     }
 
     &__title {
@@ -27,5 +36,21 @@
         width: 7rem;
     }
 
+    @include responsive.max(60em) {
+        &__title {
+            max-width: 70vw;
+        }
 
+        &__text {
+            max-width: 70vw;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
+.darkmode-active .programming__list {
+    background: #fff;
 }

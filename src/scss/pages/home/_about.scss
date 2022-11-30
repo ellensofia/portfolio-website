@@ -1,7 +1,6 @@
 @use '../../tools/responsive';
 
 .about {
-    margin-bottom: var(--section-gap);
 
     &__copy {
         max-width: 44vw;

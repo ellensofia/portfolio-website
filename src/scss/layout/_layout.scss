@@ -1,6 +1,7 @@
 @use '../tools/responsive';
 
-.hero, .about, .contact, .programming {
+// Basic layout for the site
+.hero, .about, .contact, .programming, .footer {
     display: grid;
     grid-template-columns: var(--grid-container);
 
@@ -14,6 +15,10 @@
     @include responsive.max(40em) {
         grid-template-columns: var(--grid-container-small);
     }
+}
+
+section {
+    margin-bottom: var(--section-gap);
 }
 
 // Changes left and right margins of content on smaller screens
