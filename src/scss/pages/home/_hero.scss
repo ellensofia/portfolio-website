@@ -37,7 +37,10 @@ body {
 
     &__title {
         text-transform: uppercase;
-        margin: 0 0 2rem 0;
+
+        &:last-of-type {
+            margin: 0 0 2rem 0;
+        }
     }
 
     &__subtitle {
@@ -61,18 +64,6 @@ body {
             &__img {
                 width: 30vw; 
                 min-width: 25rem;
-                // padding-bottom: var(--section-inner-gap-small);
             }
         }
-
-    @include responsive.max(30em) {
-            // &__title {
-            //     font-size: var(--font-size-4);
-            // }
-
-            // &__subtitle {
-            //     font-size: var(--font-size-3);
-            // }
-        }
-    
 }

@@ -1,7 +1,7 @@
 @use '../tools/responsive';
 
 // Basic layout for the site
-.hero, .about, .contact, .programming, .footer {
+.hero, .header, .about, .contact, .programming, .footer {
     display: grid;
     grid-template-columns: var(--grid-container);
 
@@ -23,13 +23,13 @@ section {
 
 // Changes left and right margins of content on smaller screens
 @include responsive.max(40em) {
-    #darkmode {
-        padding-left: 30px;
-    }
+    // #darkmode {
+    //     padding-left: 30px;
+    // }
 
-    .header .language-button {
-        padding-right: 30px;
-    }
+    // .header .language-button {
+    //     padding-right: 30px;
+    // }
 
     #projects {
         margin-left: 30px;

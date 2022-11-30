@@ -1,0 +1,77 @@
+@use '../components/links'as link;
+@use '../tools/responsive';
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    z-index: 80;
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: var(--header-height);
+        background-color: var(--color-bg);
+        justify-content: space-between;
+    }
+
+    &__right {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .darkmode {
+        height: 24px;
+        z-index: 100;
+    }
+
+    &__github-link {
+
+    }
+
+    &__github-icon {
+        height: 2.4rem;
+    }
+}
+
+.language-button {
+    color: var(--color-title);
+    font-size: var(--font-size-1);
+    white-space: nowrap;
+    z-index: 100;
+
+
+    .sv-btn {
+        position: relative;
+        padding-right: 0.4rem;
+
+        &::after {
+            position: absolute;
+            content: '/';
+            padding-left: 0.2rem;
+        }
+    }
+
+    .en-btn {
+        padding-left: 0.4rem;
+
+        &--active {
+            font-weight: 700;
+        }
+    }
+
+    .lang--active {
+        font-weight: 700;
+    }
+}
+
+@include responsive.max(60em) {
+    .header {
+
+        &__right {
+            gap: 2rem;
+        }
+    }
+}
