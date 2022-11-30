@@ -185,21 +185,16 @@ section {
   justify-content: center;
   position: fixed;
   top: 0;
-  margin-top: var(--header-height);
-  transition: all 0.4s 0.2s ease-in-out;
+  height: 100%;
+  width: 100%;
 }
 .menu--open {
   background-color: var(--color-bg);
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   transform: translateX(0);
-  transition: all 0.4s 0.2s ease-in-out;
+  transition: transform 0.4s cubic-bezier(0, 0.52, 0, 1);
   z-index: 81;
-}
-.menu--open .menu__list {
-  opacity: 1;
 }
 .menu__list {
   display: flex;
@@ -207,7 +202,16 @@ section {
   flex-direction: column;
   justify-content: center;
   gap: 5vh;
+  transform: translateY(-100px);
   opacity: 0;
+  transition: opacity 0.5s 0.6s, transform 0.3s 0.6s;
+}
+.menu--open .menu__list {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu--open .menu__link {
+  opacity: 1;
 }
 .menu__link {
   color: var(--color-primary);
@@ -217,6 +221,7 @@ section {
   transition: 0.5s ease;
   text-transform: uppercase;
   font-weight: 600;
+  opacity: 0;
   white-space: nowrap;
   font-size: var(--font-size-5);
 }
@@ -263,15 +268,13 @@ section {
   position: fixed;
   width: 100%;
   align-items: center;
-  z-index: 80;
+  z-index: 100;
+  background-color: var(--color-bg);
 }
 .header__inner {
   width: 100%;
-  display: flex;
   align-items: center;
   height: var(--header-height);
-  background-color: var(--color-bg);
-  justify-content: space-between;
 }
 .header__right {
   display: flex;
@@ -280,6 +283,7 @@ section {
 .header .darkmode {
   height: 24px;
   z-index: 100;
+  cursor: pointer;
 }
 .header__github-icon {
   height: 2.4rem;
@@ -431,7 +435,7 @@ body {
 .projects__inner {
   gap: var(--grid-gap);
   flex-direction: column;
-  cursor: grab;
+  cursor: pointer;
 }
 .projects__container {
   gap: var(--section-inner-gap-xsmall);
