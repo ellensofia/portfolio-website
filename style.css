@@ -52,7 +52,7 @@ span {
 }
 
 h1 {
-  font-size: var(--font-size-6);
+  font-size: var(--font-size-hero);
 }
 
 h2 {
@@ -85,7 +85,7 @@ ul {
 
 @media screen and (max-width: 60em) {
   h1 {
-    font-size: var(--font-size-5);
+    font-size: var(--font-size-6);
   }
   h2 {
     font-size: var(--font-size-4);
@@ -99,7 +99,7 @@ ul {
 }
 @media screen and (max-width: 35em) {
   h1 {
-    font-size: var(--font-size-4);
+    font-size: var(--font-size-5);
   }
   h2 {
     font-size: var(--font-size-3);
@@ -111,20 +111,12 @@ ul {
     font-size: var(--font-size-2);
   }
 }
-#outline {
-  color: var(--color-primary);
-  text-shadow: none;
-}
-#outline:hover {
-  color: var(--color-bg);
-  text-shadow: -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary), -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
-}
-
 .hidden {
-  transition: all 0.4s ease-in;
+  transition: 0.4s ease-in;
+  transition-property: opacity, transform;
   opacity: 0;
   filter: blur(0.2rem);
-  transform: translateX(-150px);
+  transform: translateX(10vw);
 }
 
 @media (prefers-reduced-motion) {
@@ -156,7 +148,8 @@ ul {
 
 .hero__link-down.hidden {
   transform: translateX(0);
-  transition-delay: 0.5s;
+  transition-property: opacity;
+  transition-delay: 0.4s;
 }
 
 .programming__column:nth-of-type(1) {
@@ -402,8 +395,9 @@ body {
   max-width: 75vw;
 }
 .hero__title:first-child {
-  opacity: 0.8;
   word-spacing: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .hero__link-down {
   bottom: 5.5rem;
@@ -411,25 +405,24 @@ body {
   bottom: 4rem;
 }
 .hero__icon-down {
-  width: 47px;
-  height: 47px;
+  width: 4.7rem;
+  height: 4.7rem;
   opacity: 0.6;
   padding: 0.6rem;
-  border: 2.5px solid var(--color-primary);
-  transition: all 0.4s ease-in-out 0s;
+  transition: all 0.2s linear 0.05s;
 }
 .hero__icon-down:hover {
   opacity: 1;
+  width: 5rem;
+  height: 5rem;
+  border: 2.5px solid var(--color-primary);
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
   border-radius: 20rem;
 }
-.hero__title {
-  text-transform: uppercase;
-}
 .hero__title:last-of-type {
-  margin: 0 0 2rem 0;
+  margin: 0;
 }
 .hero__subtitle {
   margin: 0 0 3.5rem 0;
@@ -746,6 +739,7 @@ body {
   --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
   --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
   --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+  --font-size-hero: calc( var(--font-size-6) * var(--font-scale) );
   --color-primary: rgb(26, 26, 26);
   --color-title: rgb(26, 26, 26);
   --color-complement: rgb(53, 53, 53);
