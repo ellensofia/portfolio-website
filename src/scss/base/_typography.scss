@@ -51,6 +51,25 @@ ul {
     list-style: none;
 }
 
+@include responsive.max(60em) {
+
+    h1 {
+        font-size: var(--font-size-5);
+    }
+
+    h2 {
+        font-size: var(--font-size-4);
+    }
+
+    h3 {
+        font-size: var(--font-size-3);
+    }
+
+    h4 {
+        font-size: var(--font-size-2);
+    }
+
+}
 
 @include responsive.max(35em) {
 
@@ -73,11 +92,11 @@ ul {
 }
 
 #outline {
-    transition: 0.2s 0.3s ease;
-    color: var(--color-bg);
-    text-shadow: -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary), -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
+    color: var(--color-primary);
+    text-shadow: none;
+    transition: 0.2s ease;
     &:hover {
-        color: var(--color-primary);
-        text-shadow: none;
+        color: var(--color-bg);
+        text-shadow: -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary), -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
     }
 }

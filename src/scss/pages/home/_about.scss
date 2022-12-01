@@ -4,14 +4,15 @@
 
     &__inner {
         align-items: flex-start;
-        gap: var(--section-inner-gap-xsmall);
+        gap: var(--section-inner-gap-small);
+        transition: 0.9s ease;
     }
 
     &__img {
         width: 25vw; 
         height: auto;
         object-fit: contain;
-        max-width: 39rem;
+        max-width: 30rem;
         min-width: 15rem;
         margin-bottom: var(--section-inner-gap-small);
     }
@@ -21,6 +22,7 @@
         max-width: 600px;
         padding-left: 4rem;
         position: relative;
+        padding-left: var(--section-inner-gap-xsmall);
 
         &__title {
             margin: 2rem 0;
@@ -28,16 +30,26 @@
 
         &__text {
         }
-
+    
         &::after {
-            position: absolute;
             content: '';
-            top: 0;
-            left: 0;
-            width: 2px;
+            position: absolute;
+            width: .25rem;
             height: 100%;
-            background-color: var(--color-title);
+            left: 0;
+            top: 0;
+            background-color: var(--color-primary);
         }
+
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        flex-wrap: wrap;
+        align-items: center;
+        align-items: flex-start;
     }
 
     .language {
@@ -51,31 +63,58 @@
         }
 
         .sv, .en {
-            font-size: var(--font-size-2);
+            font-size: var(--font-size-1);
         }
     }
 
     // 961px
     @include responsive.max(60em) {
 
+        &__right {
+            gap: var(--section-inner-gap-small);
+        }
+
         &__inner {
             flex-direction: column;
-            align-items: flex-start;
+            gap: 0;
         }
 
         &__copy {
-            margin-bottom: var(--section-gap);
-            max-width: 70vw;
+            margin-bottom: var(--section-inner-gap-small);
+            width: 70vw;
+            padding-left: var(--section-inner-gap-xsmall);
+        } 
+
+        &__img {
+            width: auto;
+        }
+
+        .language {
+            padding-left: var(--section-inner-gap-xsmall);
+        }
+
         }
 
         &__img {
             padding-left: var(--section-inner-gap-xsmall);
         }
-    }
 
-    @include responsive.max(680px) {
-        &__copy {
-            max-width: 90%;
+        @include responsive.max(45em) {
+            &__copy {
+                width: 100%;
+            }
+
+            &__img {
+                max-width: 25rem;
+            }    
         }
-    }
+
+}
+
+
+.anchor {
+    display: block; 
+    position: relative; 
+    top: -22rem; 
+    visibility: hidden;
 }

@@ -1,7 +1,7 @@
 @use '../tools/responsive';
 
 // Basic layout for the site
-.hero, .header, .about, .contact, .programming, .footer {
+.hero, .header, .about, .contact, .footer {
     display: grid;
     grid-template-columns: var(--grid-container);
 

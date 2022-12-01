@@ -59,16 +59,6 @@
     @include responsive.max(35em) {
         .contact {
 
-            &__inner {
-                padding-left: 0;
-
-                &::after {
-                    rotate: 90deg;
-                    transform: translate(-6.3rem, -10rem);
-                }
-            }
-            
-
             &__link span {
                 font-size: 1.6rem;
             }

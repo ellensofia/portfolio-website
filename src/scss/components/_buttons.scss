@@ -1,4 +1,4 @@
-@mixin standard($background: var(--color-accent), $color: #fff, $border-radius: none) {
+@mixin standard($background: var(--color-accent), $color: #fff, $border-radius: 0) {
     background-color: $background;
     color: $color;
     padding: 1.6rem 2.4rem;
@@ -9,7 +9,7 @@
     border: 2px solid var(--color-accent);
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 2.2;
+    letter-spacing: .4px;
 
     &:hover {
         border: 2px solid var(--color-primary);
