@@ -2,8 +2,23 @@
 
 .about {
 
+    &__inner {
+        align-items: flex-start;
+        gap: var(--section-inner-gap-xsmall);
+    }
+
+    &__img {
+        width: 25vw; 
+        height: auto;
+        object-fit: contain;
+        max-width: 39rem;
+        min-width: 15rem;
+        margin-bottom: var(--section-inner-gap-small);
+    }
+
     &__copy {
-        max-width: 44vw;
+        width: 40vw;
+        max-width: 600px;
         padding-left: 4rem;
         position: relative;
 
@@ -51,6 +66,10 @@
         &__copy {
             margin-bottom: var(--section-gap);
             max-width: 70vw;
+        }
+
+        &__img {
+            padding-left: var(--section-inner-gap-xsmall);
         }
     }
 

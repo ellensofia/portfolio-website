@@ -15,15 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;600;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="darkmode-active">
 
     <header class="header">
         <div class="header__inner">
-            <img src="assets/icons/darkmode.svg" alt="moon icon" class="darkmode" id="darkmode">
+            <img src="assets/icons/lightmode.svg" alt="sun icon" class="darkmode" id="darkmode">
 
             <div class="header__right">
 
-                <a href="https://www.linkedin.com/in/ellen-dahlgren/" class="header__github-link"><img src="assets/icons/github.svg" alt="icon github" class="header__github-icon"></a>
+                <a href="https://www.linkedin.com/in/ellen-dahlgren/" class="header__github-link"><img src="assets/icons/github-white.svg" alt="icon github" class="header__github-icon"></a>
                 
                 <div class="language-button btn">
                     <span class="sv-btn lang--active">SV</span>
@@ -51,26 +51,30 @@
                 <h2 class="hero__subtitle">Front end developer student</h2>
                 <a href="#contact" class="hero__btn btn">Kontakta mig</a>
             </div>
-            
-            <img src="assets/images/portrait.png" alt="portrait of Ellen Dahlgren" class="hero__img">
-            <img src="assets/icons/down-chevron.png" alt="arrow pointing down" class="hero__icon-down">
+            <a href="#about" class="hero__link-down">
+                <img src="assets/icons/chevron-darkmode.svg" alt="arrow pointing down" class="hero__icon-down">
+            </a>
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about__inner">
+            <img src="assets/images/portrait.png" alt="portrait of Ellen Dahlgren" class="about__img">
+
             <div class="about__copy">
+                <div class="test">
                 <h2 class="about__title">Om mig</h2>
                 <p class="about__text">Front end student med passion för UI-design. När jag för några år sedan fann webbdesign fastnade jag direkt. Nu läser jag mitt första år på front end developer på medieinstitutet och kommer vara klar till våren 2024. Under min tid på medieinstitutet kommer jag ha två LIA-perioder (lärande i arbete) vilket jag verkligen ser fram emot. Sedan innan har jag en ettårig utbildning i webbdesign och webbutveckling på Karlskoga folkhögskola. Jag är en nyfiken och driven student som ständigt vill utvecklas. När jag inte sitter och kodar gillar jag att träna, resa och skulptera. </p>
                 <h4 class="about__work">Arbetserfarenhet</h4>
                 <p class="about__work-text">Jag har tidigare arbetat inom vården på äldreboenden och som personlig assistent. Jag har även arbetat som trädgårdsarbetare och på en secondhand butik i Uppsala.</p>
             </div>
+            </div>
 
             <div class="language">
-                <h3 class="language__title">Språk</h3>
-                <h5 class="language__sv">Svenska</h5>
+                <h4 class="language__title">Språk</h4>
+                <h6 class="language__sv">Svenska</h6>
                 <span class="sv">Modersmål</span>
-                <h5 class="language__en">Engelska</h5>
+                <h6 class="language__en">Engelska</h6>
                 <span class="en">Flytande</span>
             </div>
         </div>
@@ -139,7 +143,7 @@
         <div class="programming__inner">
             <h3 class="programming__title">Programmering & designverktyg</h3>
             <p class="programming__text">
-                Jag är mycket bekväm med att bygga hemsidor med HTML, CSS (alt scss) och enklare javascript. Jag har även viss erfarenhet av att bygga sidor kopplade till wordpress. Jag föredrar att designa i XD men kan även arbeta med figma. Jag har viss erfarenhet av bildhantering och vektorgrafik i Photoshop och illustrator.
+                Jag är mycket bekväm med att bygga hemsidor med HTML, CSS (alt scss) och enklare javascript. Jag har även lite erfarenhet av att koda sidor kopplade till wordpress. Jag föredrar att designa i XD men kan även arbeta med figma. Jag har viss erfarenhet av bildhantering och vektorgrafik i Photoshop och illustrator.
             </p>
             <ul class="programming__list">
                 <li class="programming__item">
@@ -209,15 +213,15 @@
             <h3 class="contact__title">Kontakta mig</h3>
             <div class="contact__icons">
                 <a href="https://www.linkedin.com/in/ellen-dahlgren/" class="contact__link">
-                    <img src="assets/icons/linkedin.svg" alt="icon linked in" class="contact__linkedin">
+                    <img src="assets/icons/linkedin-white.svg" alt="icon linked in" class="contact__linkedin">
                     <span>Linked in</span>
                 </a>
                 <a href="" class="contact__link">
-                    <img src="assets/icons/mail.svg" alt="mail icon" class="contact__mail">
+                    <img src="assets/icons/mail-white.svg" alt="mail icon" class="contact__mail">
                     <span>ellensofiadahlgren@outlook.com</span>
                 </a>
                 <a href="" class="contact__link">
-                    <img src="assets/icons/phone.svg" alt="phone icon" class="contact__phone">
+                    <img src="assets/icons/phone-white.svg" alt="phone icon" class="contact__phone">
                     <span>0700223329</span>
                 </a>
             </div>
