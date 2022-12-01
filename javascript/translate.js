@@ -1,3 +1,10 @@
+/**
+ * Function checks the current language and
+ * removes the active class from current language button 
+ * and sets active on the other language button.
+ * It also changes the value of the currentLang variable
+ * Finaly it calls the translateTo function with the argument of currentLang
+ */
 function translate() {
     langBtn = document.querySelector('.language-button');
 
@@ -19,9 +26,14 @@ function translate() {
     translateTo(currentLang);
 }
 
+/**
+ * Function checks what the current language is. 
+ * Gets all text elements from HTML document
+ * and changes the inner text of all elements
+ * @param {string} locale either "sv" or "en"
+ */
 function translateTo(locale) {
     // locale = "sv" | "en"
-    console.log('translateToEng active');
     const translations = locale === "sv" ? innerTextInSwe() : innerTextInEng()
     
     const link1 = document.querySelector('.link1');
@@ -87,9 +99,12 @@ function translateTo(locale) {
     projectSeeAllLink2.innerText = translations[27];
     projectSeeAllLink3.innerText = translations[27];
     projectSeeAllLink4.innerText = translations[27];
-    
 }
 
+/**
+ * Function returns the sites text 
+ * @returns {Array} text in english
+ */
 function innerTextInEng() {
     return [
         link1 = 'About me',
@@ -120,10 +135,13 @@ function innerTextInEng() {
         projectTitle4 = 'Yogibear',
         projectText4 = "I have made this page according to an existing XD design. The goal was to get it pixel perfect.",
         projectSeeAllLink = "Look at a demo",
-
     ]
 }
 
+/**
+ * Function returns the sites text
+ * @returns {Array} text in swedish
+ */
 function innerTextInSwe() {
     return [
         link1 = 'Om mig',
@@ -154,6 +172,5 @@ function innerTextInSwe() {
         projectTitle4 = 'Yogibear',
         projectText4 = "Denna sida har jag kodat upp efter en befintlig XD design. Målet var att få den pixel perfekt.",
         projectSeeAllLink = "Se en demo",
-
     ]
 }

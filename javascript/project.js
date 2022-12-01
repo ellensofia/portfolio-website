@@ -1,3 +1,6 @@
+/**
+ * Function that toggles visibility of product description
+ */
 function toggleProjectDescription(){
 
     const project = document.querySelector('.project')

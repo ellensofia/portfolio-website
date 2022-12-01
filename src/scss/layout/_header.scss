@@ -1,4 +1,3 @@
-@use '../components/links'as link;
 @use '../tools/responsive';
 
 
@@ -24,10 +23,6 @@
         height: 24px;
         z-index: 100;
         cursor: pointer;
-    }
-
-    &__github-link {
-
     }
 
     &__github-icon {

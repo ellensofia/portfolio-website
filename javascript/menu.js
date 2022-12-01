@@ -1,4 +1,7 @@
-const toggleClass = () => {
+/**
+ * Function that shows or hides menu
+ */
+const toggleMenuOpenClass = () => {
 
     const menuList = document.querySelector('.menu');
     const menuBtn = document.querySelector('.menu__btn');

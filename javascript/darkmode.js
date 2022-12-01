@@ -1,3 +1,7 @@
+/**
+ * Function that gets the body and text and svg elements 
+ * and switches color depending on if the user has chosesen dark- or lightmode
+ */
 function darkmode() {
 
     const body = document.querySelector('body');
