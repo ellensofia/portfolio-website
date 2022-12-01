@@ -17,21 +17,19 @@
     }
 }
 
-section {
-    margin-bottom: var(--section-gap);
+.projects {
+    display: grid;
+    grid-template-columns: var(--grid-container-projects);
+
+    &__inner {
+        grid-column: 2/4;
+    }
+
+    @include responsive.max(40em) {
+        grid-template-columns: var(--grid-container-projects-small);
+    }
 }
 
-// Changes left and right margins of content on smaller screens
-@include responsive.max(40em) {
-    // #darkmode {
-    //     padding-left: 30px;
-    // }
-
-    // .header .language-button {
-    //     padding-right: 30px;
-    // }
-
-    #projects {
-        margin-left: 30px;
-    }
+section {
+    margin-bottom: var(--section-gap);
 }
