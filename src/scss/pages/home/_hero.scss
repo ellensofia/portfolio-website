@@ -8,31 +8,54 @@ body {
 }
 
 .hero {
-    min-height: 100vh;
+    height: 100vh;
+    position: relative;
 
     &__inner {
         align-items: center;
     }
     
-    &__background {
-        position: absolute;
-        top: 3vh;
-        z-index: -1;
-    }
-    
     &__copy {
         max-width: 75vw;
-        position: relative;
     }
+
+    // transition: <property> || <duration> || <timing-function> || <delay> [, ...];
 
     &__icon-down {
         position: absolute;
-        width: 4vw;
-        bottom: 15px;
+        width: 45px;
+        height: 45px;
+        bottom: 2.5rem;
         right: 48%;
-        padding: 1rem;
-        border-radius: 20rem;
-        border: 2px solid black;
+        // border-radius: 20rem;
+        opacity: 0.2;
+        padding: 0.4rem;
+        border: 2.5px solid var(--color-primary);
+        // transition: ;
+        transition: all 3s ease .3;
+        animation-delay: .5s;
+    
+        &:hover {
+            opacity: 1;
+            -moz-animation: bounce 2s infinite;
+            -webkit-animation: bounce 2s infinite;
+            animation: bounce 2s infinite;
+            border-radius: 20rem;
+        }
+        
+        }
+    
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
     }
 
     &__title {
@@ -51,19 +74,15 @@ body {
         @include button.standard;
     }
 
-    @include responsive.max(976px) {
+    // @include responsive.max(976px) {
 
-        &__inner {
-            flex-wrap: wrap;
-        }
+    //     &__inner {
+    //         flex-wrap: wrap;
+    //     }
 
-        &__copy {
-            padding: 29vh 0;
-        }
+    //     &__copy {
+    //         padding: 29vh 0;
+    //     }
 
-            &__img {
-                width: 30vw; 
-                min-width: 25rem;
-            }
-        }
+    //     }
 }
