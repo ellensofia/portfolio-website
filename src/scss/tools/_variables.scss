@@ -7,8 +7,10 @@
     --section-inner-gap-xsmall: calc( var(--section-gap) * 0.25 );
     --grid-container-projects: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(6rem, 1fr); 
     --grid-container-projects-small: minmax(3rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(3rem, 1fr); 
+    --grid-container-projects-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr); 
     --grid-container: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(6rem, 1fr);
     --grid-container-small: minmax(3rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(3rem, 1fr);
+    --grid-container-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr);
     --grid-inner: repeat(12, 1fr);
     --header-height: 6.85rem;
 

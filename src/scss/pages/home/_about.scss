@@ -6,7 +6,22 @@
         align-items: flex-start;
         gap: var(--section-inner-gap-small);
         transition: 0.9s ease;
-    }
+        flex-wrap: wrap;
+        position: relative;
+        padding-left: var(--section-inner-gap-xsmall);
+
+            &::after {
+                content: "";
+                position: absolute;
+                opacity: 1;
+                width: 0.25rem;
+                height: 100%;
+                left: 0;
+                top: 0px;
+                background-color: var(--color-primary);
+            }
+        }
+    
 
     &__img {
         width: 25vw; 
@@ -14,33 +29,15 @@
         object-fit: contain;
         max-width: 30rem;
         min-width: 15rem;
-        margin-bottom: var(--section-inner-gap-small);
     }
 
     &__copy {
         width: 40vw;
         max-width: 600px;
-        padding-left: 4rem;
-        position: relative;
-        padding-left: var(--section-inner-gap-xsmall);
 
         &__title {
             margin: 2rem 0;
         }
-
-        &__text {
-        }
-    
-        &::after {
-            content: '';
-            position: absolute;
-            width: .25rem;
-            height: 100%;
-            left: 0;
-            top: 0;
-            background-color: var(--color-primary);
-        }
-
     }
 
     &__right {
@@ -50,6 +47,8 @@
         flex-wrap: wrap;
         align-items: center;
         align-items: flex-start;
+        margin-bottom: var(--section-inner-gap-small);
+
     }
 
     .language {
@@ -72,6 +71,7 @@
 
         &__right {
             gap: var(--section-inner-gap-small);
+            align-items: center;
         }
 
         &__inner {
@@ -82,21 +82,13 @@
         &__copy {
             margin-bottom: var(--section-inner-gap-small);
             width: 70vw;
-            padding-left: var(--section-inner-gap-xsmall);
         } 
 
         &__img {
             width: auto;
         }
 
-        .language {
-            padding-left: var(--section-inner-gap-xsmall);
-        }
 
-        }
-
-        &__img {
-            padding-left: var(--section-inner-gap-xsmall);
         }
 
         @include responsive.max(45em) {
@@ -105,7 +97,7 @@
             }
 
             &__img {
-                max-width: 25rem;
+                max-width: 21rem;
             }    
         }
 

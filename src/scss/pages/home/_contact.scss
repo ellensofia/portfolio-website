@@ -17,6 +17,7 @@
             width: .25rem;
             height: 100%;
             left: 0;
+            opacity: 6;
             background-color: var(--color-primary);
         }
     }
@@ -55,12 +56,32 @@
         margin-bottom: var(--section-inner-gap-xsmall);
     }
 
-
     @include responsive.max(35em) {
         .contact {
 
-            &__link span {
-                font-size: 1.6rem;
+            &__inner {
+                padding: 0;
+                &::after {
+                    display: none;
+                }
+            }
+            &__link {
+                gap: 1rem;
+
+                & span {
+                    font-size: 1.4rem;
+                }
+            }
+            &__linkedin {
+                height: 2rem;
+            }
+
+            &__mail {
+                width: 1.8rem;
+            }
+
+            &__phone {
+                height: 2.2rem;
             }
         }
     }

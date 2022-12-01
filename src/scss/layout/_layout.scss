@@ -15,6 +15,10 @@
     @include responsive.max(40em) {
         grid-template-columns: var(--grid-container-small);
     }
+
+    @include responsive.max(350px) {
+        grid-template-columns: var(--grid-container-xsmall);
+    }
 }
 
 .projects {
@@ -27,6 +31,10 @@
 
     @include responsive.max(40em) {
         grid-template-columns: var(--grid-container-projects-small);
+    }
+
+    @include responsive.max(350px) {
+        grid-template-columns: var(--grid-container-projects-xsmall);
     }
 }
 

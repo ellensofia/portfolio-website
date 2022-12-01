@@ -1,10 +1,11 @@
-.footer {
+@use '../tools/responsive';
 
+
+.footer {
 
     &__inner {
         justify-content: center;
     }
-
 
     &__copyright {
         opacity: 0.8;
@@ -13,4 +14,11 @@
         font-size: var(--color-primary);
         font-size: var(--font-size-1);
     }
+
+    @include responsive.max(35em) { 
+        & span {
+            font-size: 1.4rem;
+        }
+    }
+
 }

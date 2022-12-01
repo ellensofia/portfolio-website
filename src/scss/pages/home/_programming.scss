@@ -2,6 +2,7 @@
 @use '../../tools/variables';
 
 .programming {
+    min-width: 50vw;
 
     &__columns {
         display: flex;
@@ -35,20 +36,7 @@
     }
     
     @include responsive.max(60em) {
-        &__inner {
-            padding-left: var(--section-inner-gap-xsmall);
-            position: relative;
-    
-            &::after {
-                content: "";
-                position: absolute;
-                width: 0.25rem;
-                height: calc(100% + 670px);
-                left: 0;
-                top: -670px;
-                background-color: var(--color-primary);
-            }
-        }
+
         &__title {
             max-width: 70vw;
         }
