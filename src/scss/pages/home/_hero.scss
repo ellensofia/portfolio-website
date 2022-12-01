@@ -40,7 +40,7 @@ body {
         opacity: 0.6;
         padding: 0.6rem;
         border: 2.5px solid var(--color-primary);
-        transition: all .4s ease-in-out 0.2s;
+        transition: all .4s ease-in-out 0s;
         // transition: <property> || <duration> || <timing-function> || <delay> [, ...];
     
         &:hover {
