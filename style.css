@@ -159,11 +159,57 @@ ul {
 #outline {
   color: var(--color-primary);
   text-shadow: none;
-  transition: 0.2s ease;
 }
 #outline:hover {
   color: var(--color-bg);
   text-shadow: -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary), -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
+}
+
+.hidden {
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: blur(0.3rem);
+  transform: translateX(-100px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (preferes-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.hero__copy h4 {
+  transition-delay: 0.2s;
+}
+.hero__copy h1:first-of-type {
+  transition-delay: 0.2s;
+}
+.hero__copy h1:last-of-type {
+  transition-delay: 0.4s;
+}
+.hero__copy h2 {
+  transition-delay: 0.6s;
+}
+.hero__copy a {
+  transition-delay: 0.8s;
+}
+
+.programming__column:nth-of-type(1) {
+  transition-delay: 0;
+  transition-duration: 0.1s;
+}
+.programming__column:nth-of-type(2) {
+  transition-delay: 0.4s;
+  transition-duration: 0.4s;
+}
+.programming__column:nth-of-type(3) {
+  transition-delay: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .hero, .header, .about, .contact, .footer {
@@ -251,7 +297,7 @@ section {
   gap: 5vh;
   transform: translateY(-100px);
   opacity: 0;
-  transition: opacity 0.5s 0.3s, transform 0.3s 0.4s ease-in-out;
+  transition: opacity 0.5s 0.3s, transform 0.3s 0.4s linear;
 }
 .menu--open .menu__list {
   opacity: 1;
@@ -292,7 +338,7 @@ section {
   z-index: 100;
   display: flex;
   align-items: center;
-  transition: 0.5s 0.5s ease-in;
+  transition: 0.5s 0.5s ease;
 }
 .menu__burger {
   width: 2.2rem;
@@ -310,7 +356,6 @@ section {
   position: absolute;
   left: 0;
   top: 0.8rem;
-  transition: 0.2s ease 0.3s;
 }
 .menu__burger::after {
   top: -0.8rem;

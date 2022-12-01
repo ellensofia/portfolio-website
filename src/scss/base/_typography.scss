@@ -98,7 +98,6 @@ ul {
 #outline {
     color: var(--color-primary);
     text-shadow: none;
-    transition: 0.2s ease;
     &:hover {
         color: var(--color-bg);
         text-shadow: -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary), -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
