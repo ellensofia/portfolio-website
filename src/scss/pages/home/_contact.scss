@@ -1,0 +1,77 @@
+@use '../../components/links'as link;
+@use '../../tools/responsive';
+
+
+.contact {
+
+    &__inner {
+        flex-direction: column;
+        position: relative;
+        padding-left: var(--section-inner-gap-xsmall);
+        transition: 0.3s 0.3s ease;
+
+    
+        &::after {
+            content: '';
+            position: absolute;
+            width: .25rem;
+            height: 100%;
+            left: 0;
+            background-color: var(--color-primary);
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        gap: var(--section-inner-gap-xsmall);
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        gap:2rem;
+        font-size: var(--font-size-1);
+        @include link.standard;
+        padding-bottom: 0.4rem;
+        width: fit-content;
+        text-transform: none;
+        font-weight: 400;
+    }
+    
+    &__linkedin {
+        height: 2.4rem;
+    }
+
+    &__mail {
+        width: 2.4rem;
+    }
+
+    &__phone {
+        height: 2.8rem;
+    }
+
+    &__title {
+        margin-bottom: var(--section-inner-gap-xsmall);
+    }
+
+
+    @include responsive.max(35em) {
+        .contact {
+
+            &__inner {
+                padding-left: 0;
+
+                &::after {
+                    rotate: 90deg;
+                    transform: translate(-6.3rem, -10rem);
+                }
+            }
+            
+
+            &__link span {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
