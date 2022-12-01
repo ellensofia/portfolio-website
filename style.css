@@ -123,8 +123,8 @@ ul {
 .hidden {
   transition: all 0.4s ease-in;
   opacity: 0;
-  filter: blur(0.3rem);
-  transform: translateX(-100px);
+  filter: blur(0.2rem);
+  transform: translateX(-150px);
 }
 
 @media (prefers-reduced-motion) {
@@ -139,24 +139,24 @@ ul {
 }
 
 .hero__copy h4 {
-  transition-delay: 0.1s;
+  transition-delay: 0s;
 }
 .hero__copy h1:first-of-type {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 .hero__copy h1:last-of-type {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 .hero__copy h2 {
-  transition-delay: 0.4s;
+  transition-delay: 0.3s;
 }
 .hero__copy a {
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
 }
 
 .hero__link-down.hidden {
   transform: translateX(0);
-  transition-delay: 0.6s;
+  transition-delay: 0.5s;
 }
 
 .programming__column:nth-of-type(1) {
