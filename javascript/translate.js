@@ -22,7 +22,6 @@ function translate() {
         svBtn.classList.add('lang--active');
         currentLang = 'sv';
     }
-    
     translateTo(currentLang);
 }
 

@@ -39,13 +39,22 @@
     
     &--open .menu__link {
         opacity: 1;
+        font-size: var(--font-size-5);
+
+
+        @include responsive.max(45em) {
+            font-size: var(--font-size-4);
+        }
+
+        @include responsive.max(30em) {
+            font-size: var(--font-size-3);
+        }
     }
     
     &__link {
         @include link.standard;
         opacity: 0;
         white-space: nowrap;
-        font-size: var(--font-size-5);
     }
     
     // transition: <property> || <duration> || <timing-function> || <delay> [, ...];

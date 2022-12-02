@@ -8,18 +8,19 @@ function textAnimation() {
  * asynchronously observe changes in the intersection of a 
  * target element with an ancestor element or with a top-level 
  * document's viewport.
+ * observer är ett promise
  */
 const observer = new IntersectionObserver((enteries) => {
     console.log("observer active");
     
     // For each element that is visible on screen add show class
     // Else remove show class
-    enteries.forEach((entry) => {
+    enteries.forEach((HTMLelement) => {
         
-        if(entry.isIntersecting) {
-            entry.target.classList.add('show');
+        if(HTMLelement.isIntersecting) {
+            HTMLelement.target.classList.add('show');
         } else {
-            entry.target.classList.remove('show');
+            HTMLelement.target.classList.remove('show');
         }
     });
 })
@@ -30,5 +31,5 @@ const observer = new IntersectionObserver((enteries) => {
     // Foreach hiddenTextElement 
     // call observer function
     // with the method observe and pass the argument element
-    hiddenTextElements.forEach((element) => observer.observe(element));
+    hiddenTextElements.forEach((HTMLelement) => observer.observe(HTMLelement));
 }

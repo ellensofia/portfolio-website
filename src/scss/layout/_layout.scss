@@ -40,4 +40,8 @@
 
 section {
     margin-bottom: var(--section-gap);
+
+    @include responsive.max(40em) {
+        margin-bottom: var(--section-inner-gap-small);
+    }
 }

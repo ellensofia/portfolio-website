@@ -12,7 +12,13 @@
         padding: var(--section-inner-gap-xsmall);
         font-size: var(--color-primary);
         font-size: var(--font-size-1);
+
+        @include responsive.max(40em) {
+            padding: 2rem;
+            padding-top: 0;
+        }
     }
+
 
     @include responsive.max(35em) { 
         & span {
