@@ -11,7 +11,6 @@
     --grid-container: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(6rem, 1fr);
     --grid-container-small: minmax(3rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(3rem, 1fr);
     --grid-container-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr);
-    --grid-inner: repeat(12, 1fr);
     --header-height: 6.85rem;
 
     // Add fonts here
@@ -32,18 +31,13 @@
 
     // Colors
     --color-primary: rgb(26, 26, 26);
-    --color-title: rgb(26, 26, 26);
-    --color-complement: rgb(53, 53, 53);
     --color-accent: #f29a36;
     --color-bg: #f6f5ef;
-
 }
 
 // Darkmode colors
 body.darkmode-active {
     --color-primary: rgb(245, 251, 255);
-    --color-title: rgb(255, 255, 255);
-    --color-complement: rgb(171, 171, 171);
     --color-accent: #4291ab;
     --color-bg: #1a1a1a;
 }
