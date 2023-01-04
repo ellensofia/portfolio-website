@@ -60,7 +60,7 @@
     // transition: <property> || <duration> || <timing-function> || <delay> [, ...];
     &__btn {
         width: 2.2rem;
-        height: 2.2rem;
+        height: 2.5rem;
         z-index: 100;
         display: flex;
         align-items: center;
@@ -69,7 +69,7 @@
 
     &__burger {
         width: 2.2rem;
-        height: 0.22rem;
+        height: 0.25rem;
         background-color: var(--color-primary);
         position: relative;
         top:0.2rem;
