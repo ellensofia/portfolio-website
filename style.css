@@ -294,7 +294,7 @@ section {
 .menu__link::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 0.1em;
   width: 100%;
   transform: scaleX(0);
   bottom: -3px;
@@ -688,7 +688,7 @@ body {
 .contact__link::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 0.1em;
   width: 100%;
   transform: scaleX(0);
   bottom: -3px;

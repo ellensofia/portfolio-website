@@ -1,4 +1,5 @@
 @use '../tools/responsive';
+
 /* Global Variables */
 :root {
     --section-gap: 12rem;
@@ -13,10 +14,9 @@
     --grid-container-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr);
     --header-height: 6.85rem;
 
-    // Add fonts here
+    // Fonts
     --font-serif: serif;
     --font-sans: 'Libre Franklin', sans-serif;
-
     --font-base: 1.8rem;
     --font-scale: 1.33;
     --line-height: 1.5;
@@ -43,7 +43,6 @@ body.darkmode-active {
 }
 
 // Change margins on smaller screens
-
 @include responsive.max(60em) {
     body {
         --section-gap: 10rem;
