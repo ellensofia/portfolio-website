@@ -33,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--color-title);
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -747,7 +747,6 @@ body {
   --grid-container: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(6rem, 1fr);
   --grid-container-small: minmax(3rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(3rem, 1fr);
   --grid-container-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr);
-  --grid-inner: repeat(12, 1fr);
   --header-height: 6.85rem;
   --font-serif: serif;
   --font-sans: "Libre Franklin", sans-serif;
@@ -762,16 +761,12 @@ body {
   --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
   --font-size-hero: calc( var(--font-size-6) * var(--font-scale) );
   --color-primary: rgb(26, 26, 26);
-  --color-title: rgb(26, 26, 26);
-  --color-complement: rgb(53, 53, 53);
   --color-accent: #f29a36;
   --color-bg: #f7f7f7;
 }
 
 body.darkmode-active {
   --color-primary: rgb(245, 251, 255);
-  --color-title: rgb(255, 255, 255);
-  --color-complement: rgb(171, 171, 171);
   --color-accent: #4291ab;
   --color-bg: #1a1a1a;
 }

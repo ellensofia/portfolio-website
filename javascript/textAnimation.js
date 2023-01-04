@@ -10,12 +10,12 @@ function textAnimation() {
  * document's viewport.
  * observer är ett promise
  */
-const observer = new IntersectionObserver((enteries) => {
+const observer = new IntersectionObserver((entries) => {
     console.log("observer active");
     
     // For each element that is visible on screen add show class
     // Else remove show class
-    enteries.forEach((HTMLelement) => {
+    entries.forEach((HTMLelement) => {
         
         if(HTMLelement.isIntersecting) {
             HTMLelement.target.classList.add('show');
