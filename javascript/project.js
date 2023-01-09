@@ -3,11 +3,9 @@
  */
 function toggleProjectDescription(){
 
-    const project = document.querySelector('.project')
-    const projectCopys = document.querySelectorAll('.project__copy')
+    const projectText = document.querySelectorAll('.project__copy')
 
-    for (const project of projectCopys) {
-        
+    for (const project of projectText) {
         project.classList.toggle('visible')
     }
 
