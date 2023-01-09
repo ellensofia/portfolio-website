@@ -11,7 +11,6 @@ function textAnimation() {
  * observer är ett promise
  */
 const observer = new IntersectionObserver((entries) => {
-    console.log("observer active");
     
     // For each element that is visible on screen add show class
     // Else remove show class
