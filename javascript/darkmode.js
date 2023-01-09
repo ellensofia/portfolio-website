@@ -23,7 +23,6 @@ function darkmode() {
 
     } else {
         darkmodeBtn.src = 'assets/icons/lightmode.svg';
-        
         linkedinIcon.src = 'assets/icons/linkedin-white.svg';
         mailIcon.src = 'assets/icons/mail-white.svg';
         phoneIcon.src = 'assets/icons/phone-white.svg';
