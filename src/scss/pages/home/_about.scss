@@ -85,22 +85,18 @@
         &__img {
             width: auto;
         }
+    }
 
-
+    @include responsive.max(45em) {
+        &__copy {
+            width: 100%;
         }
 
-        @include responsive.max(45em) {
-            &__copy {
-                width: 100%;
-            }
-
-            &__img {
-                max-width: 21rem;
-            }    
-        }
-
+        &__img {
+            max-width: 21rem;
+        }    
+    }
 }
-
 
 .anchor {
     display: block; 
