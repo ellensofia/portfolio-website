@@ -1,3 +1,5 @@
+@use '../../tools/responsive';
+
 .projects {    
     &__container {
         gap: var(--section-inner-gap-xsmall);
@@ -13,70 +15,126 @@
     &__title {
         margin-bottom: var(--section-inner-gap-xsmall);
     }
-
         
     &__subtitle {
         font-weight: 300;
         margin-bottom: var(--section-inner-gap-xsmall);
     }
+    
 
-}
-
-.project {
-    min-width: 50rem;
-    transition: .5s ease;
-    overflow-y: hidden;
-
-    &__img {
-        min-width: 45rem;
-        z-index: 2;
-    }
-
-    &:hover {
-        scale: 1.025;
-        width: 900px;
-    }
-
+    .project {
+        min-width: 37rem;
+        transition: .5s ease;
+        overflow-y: hidden;
+    
+        &:last-child {
+            margin-right: var(--section-inner-gap-xsmall);
+        }
+    
+        &:hover {
+            scale: 1.01;
+        }
+    
         &__lower {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-top: 1.6rem;
         
-        & a {
+            & a {
+                display: flex;
+                align-items: center;
+                font-size: var(--font-size-1);
+                color: #000;
+                gap: 1rem;
+            }
+
+            .github-icon {
+                width: 2.4rem;
+                height: auto;
+            }
+        }
+
+        &__copy {
+            width: 100%;
+            background-color: #fff;
+            height: 0;
+            transition: 0.3s ease;
+            z-index: -1;
+            opacity: 0;
+            padding: 0 var(--section-inner-gap-xsmall);
             display: flex;
-            align-items: center;
-            font-size: var(--font-size-1);
-            color: #000;
-            gap: 1rem;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .visible {
+            height: 31.741rem;
+            padding: var(--section-inner-gap-xsmall);
+            opacity: 1;
+        }
+        
+        &__copy p, h4, h5, a, span {
+                color: var(--color-dark);
+            }
+        
+
+    @include responsive.max(870px) { 
+            &__img {
+                height: 51.9rem;
+            }
+
+            &__copy.visible {
+                height: 26rem;
+                transform: translateY(-100%);
+                margin-bottom: -26rem;
         }
 }
+    
+    @include responsive.max(35em) { 
 
-&__copy {
-    width: 100%;
-    background-color: #fff;
-    height: 0;
-    transition: 0.3s ease;
-    z-index: -1;
-    opacity: 0;
-    padding: 0 var(--section-inner-gap-xsmall);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+            width: 24rem;
+            min-width: 24rem;
+            position: relative;
 
-.github-icon {
-    width: 2.4rem;
-    height: auto;
-}
+            &__copy.visible {
+                height: 35rem;
+                padding: 1.8rem;
+                transform: translateY(-100%);
+                margin-bottom: -35rem;
 
-&__copy p, h4, h5, a, span {
-        color: var(--color-dark);
-    }
-}
+                &::after{
+                    height: 5rem;
+                    width: 100%;
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+                    position: absolute;
+                    top: -5rem;
+                    left: 0;
+                    content: '';
+                }
+            }
 
-.visible {
-    height: 31.741rem;
-    padding: var(--section-inner-gap-xsmall);
-    opacity: 1;
-}
+            &__lower {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: unset;
+
+                & a, span {
+                    font-size: 1.4rem;
+                }
+            }
+
+            &__img {
+                min-width: 24rem;
+                height: 49rem;
+                object-fit: cover;
+                object-position: 50% 0;
+            }
+        }
+    }}
+
+
+
+
+
+

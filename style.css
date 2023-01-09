@@ -595,34 +595,35 @@ body {
   font-weight: 300;
   margin-bottom: var(--section-inner-gap-xsmall);
 }
-
-.project {
-  min-width: 50rem;
+.projects .project {
+  min-width: 37rem;
   transition: 0.5s ease;
   overflow-y: hidden;
 }
-.project__img {
-  min-width: 45rem;
-  z-index: 2;
+.projects .project:last-child {
+  margin-right: var(--section-inner-gap-xsmall);
 }
-.project:hover {
-  scale: 1.025;
-  width: 900px;
+.projects .project:hover {
+  scale: 1.01;
 }
-.project__lower {
+.projects .project__lower {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1.6rem;
 }
-.project__lower a {
+.projects .project__lower a {
   display: flex;
   align-items: center;
   font-size: var(--font-size-1);
   color: #000;
   gap: 1rem;
 }
-.project__copy {
+.projects .project__lower .github-icon {
+  width: 2.4rem;
+  height: auto;
+}
+.projects .project__copy {
   width: 100%;
   background-color: #fff;
   height: 0;
@@ -634,18 +635,59 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.project .github-icon {
-  width: 2.4rem;
-  height: auto;
-}
-.project__copy p, .project h4, .project h5, .project a, .project span {
-  color: var(--color-dark);
-}
-
-.visible {
+.projects .project .visible {
   height: 31.741rem;
   padding: var(--section-inner-gap-xsmall);
   opacity: 1;
+}
+.projects .project__copy p, .projects .project h4, .projects .project h5, .projects .project a, .projects .project span {
+  color: var(--color-dark);
+}
+@media screen and (max-width: 870px) {
+  .projects .project__img {
+    height: 51.9rem;
+  }
+  .projects .project__copy.visible {
+    height: 26rem;
+    transform: translateY(-100%);
+    margin-bottom: -26rem;
+  }
+}
+@media screen and (max-width: 35em) {
+  .projects .project {
+    width: 24rem;
+    min-width: 24rem;
+    position: relative;
+  }
+  .projects .project__copy.visible {
+    height: 35rem;
+    padding: 1.8rem;
+    transform: translateY(-100%);
+    margin-bottom: -35rem;
+  }
+  .projects .project__copy.visible::after {
+    height: 5rem;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    content: "";
+  }
+  .projects .project__lower {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: unset;
+  }
+  .projects .project__lower a, .projects .project__lower span {
+    font-size: 1.4rem;
+  }
+  .projects .project__img {
+    min-width: 24rem;
+    height: 49rem;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
 }
 
 .contact__inner {
@@ -750,7 +792,7 @@ body {
   --header-height: 6.85rem;
   --font-serif: serif;
   --font-sans: "Libre Franklin", sans-serif;
-  --font-base: 1.8rem;
+  --font-base: 1.6rem;
   --font-scale: 1.33;
   --line-height: 1.5;
   --font-size-1: var(--font-base);
@@ -766,7 +808,7 @@ body {
 }
 
 body.darkmode-active {
-  --color-primary: rgb(245, 251, 255);
+  --color-primary: rgb(232, 242, 248);
   --color-accent: #4291ab;
   --color-bg: #1a1a1a;
 }
