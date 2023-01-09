@@ -79,6 +79,18 @@ body {
         &__title:last-of-type {
             margin: 0 0 1rem 0;
         }
+        &__link-down {
+            bottom: 1.6rem;
+        }
+        
+        &__icon-down {
+            width: 4rem;
+            height: 4rem;
+            &:hover {
+                width: 4.6rem;
+                height: 4.6rem; 
+            }
+        }
     }
 
     @include responsive.max(46em) {
