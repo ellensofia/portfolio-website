@@ -622,6 +622,10 @@ body {
   transition: 0.5s ease;
   overflow-y: hidden;
 }
+.projects .project__img {
+  height: 20.2rem;
+  width: 100%;
+}
 .projects .project:last-child {
   margin-right: var(--section-inner-gap-xsmall);
 }

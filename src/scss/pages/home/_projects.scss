@@ -26,6 +26,11 @@
         min-width: 37rem;
         transition: .5s ease;
         overflow-y: hidden;
+
+        &__img {
+            height: 20.2rem;
+            width: 100%;
+        }
     
         &:last-child {
             margin-right: var(--section-inner-gap-xsmall);
