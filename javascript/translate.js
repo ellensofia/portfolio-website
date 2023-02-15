@@ -66,6 +66,9 @@ function translateTo(locale) {
     const projectSeeAllLink2 = document.querySelector('.project__link2');
     const projectSeeAllLink3 = document.querySelector('.project__link3');
     const projectSeeAllLink4 = document.querySelector('.project__link4');
+    const projectSeeAllLink5 = document.querySelector('.project__link5');
+    const projectTitle5 = document.querySelector('.project__title5');
+    const projectText5 = document.querySelector('.project__text5');
     
     link1.innerText = translations[0];
     link2.innerText = translations[1];
@@ -98,6 +101,9 @@ function translateTo(locale) {
     projectSeeAllLink2.innerText = translations[27];
     projectSeeAllLink3.innerText = translations[27];
     projectSeeAllLink4.innerText = translations[27];
+    projectSeeAllLink5.innerText = translations[27];
+    projectTitle5.innerText = translations[28];
+    projectText5.innerText = translations[29];
 }
 
 /**
@@ -134,6 +140,8 @@ function innerTextInEng() {
         projectTitle4 = 'Yogibear',
         projectText4 = "I have made this page according to an existing XD design. The goal was to get it pixel perfect.",
         projectSeeAllLink = "Look at a demo",
+        projectTitle5 = 'Calendar',
+        projectText5 = "This was a group project where we made a calendar where you can add todos.",
     ]
 }
 
@@ -171,5 +179,7 @@ function innerTextInSwe() {
         projectTitle4 = 'Yogibear',
         projectText4 = "Denna sida har jag kodat upp efter en befintlig XD design. Målet var att få den pixel perfekt.",
         projectSeeAllLink = "Se en demo",
+        projectTitle5 = 'Kalender',
+        projectText5 = "Ett grupprojekt där vi skapade en kalender där användaren kan lägga till todos.",
     ]
 }
