@@ -632,6 +632,9 @@ body {
 .projects .project:hover {
   scale: 1.01;
 }
+.projects .project__link1 {
+  white-space: nowrap;
+}
 .projects .project__lower {
   display: flex;
   justify-content: space-between;
@@ -674,7 +677,7 @@ body {
     height: 51.9rem;
   }
   .projects .project__copy.visible {
-    height: 26rem;
+    height: 30rem;
     transform: translateY(-100%);
     margin-bottom: -26rem;
   }
@@ -689,7 +692,7 @@ body {
     position: relative;
   }
   .projects .project__copy.visible {
-    height: 35rem;
+    height: 39rem;
     padding: 1.8rem;
     transform: translateY(-100%);
     margin-bottom: -35rem;

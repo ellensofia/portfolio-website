@@ -69,6 +69,8 @@ function translateTo(locale) {
     const projectSeeAllLink5 = document.querySelector('.project__link5');
     const projectTitle5 = document.querySelector('.project__title5');
     const projectText5 = document.querySelector('.project__text5');
+    const projectTitle6 = document.querySelector('.project__title6');
+    const projectText6 = document.querySelector('.project__text6');
     
     link1.innerText = translations[0];
     link2.innerText = translations[1];
@@ -104,6 +106,8 @@ function translateTo(locale) {
     projectSeeAllLink5.innerText = translations[27];
     projectTitle5.innerText = translations[28];
     projectText5.innerText = translations[29];
+    projectTitle6.innerText = translations[30];
+    projectText6.innerText = translations[31];
 }
 
 /**
@@ -139,9 +143,11 @@ function innerTextInEng() {
         projectText3 = 'This is a text-based interactive story.',
         projectTitle4 = 'Yogibear',
         projectText4 = "I have made this page according to an existing XD design. The goal was to get it pixel perfect.",
-        projectSeeAllLink = "Look at a demo",
+        projectSeeAllLink = "Demo",
         projectTitle5 = 'Calendar',
         projectText5 = "This was a group project where we made a calendar where you can add todos.",
+        projectTitle6 = "Take 'n bake",
+        projectText6 = "This is a game created with p5 and Javascript and the code is structured in an object oriented way. We worked as a group and came up with the design and idea together. Unfortunately, the game can only display in full screen on the desktop.",
     ]
 }
 
@@ -178,8 +184,10 @@ function innerTextInSwe() {
         projectText3 = 'Det här är en texbaserad interaktiv historia gjort med främst javascript.',
         projectTitle4 = 'Yogibear',
         projectText4 = "Denna sida har jag kodat upp efter en befintlig XD design. Målet var att få den pixel perfekt.",
-        projectSeeAllLink = "Se en demo",
+        projectSeeAllLink = "Demo",
         projectTitle5 = 'Kalender',
         projectText5 = "Ett grupprojekt där vi skapade en kalender där användaren kan lägga till todos.",
+        projectTitle6 = "Take 'n bake",
+        projectText6 = "Detta är ett spel som är skapat med p5 och Javascript och koden är strukturerad på ett objektorienterat sätt. Vi arbetade i grupp och tog fram design och idé tillsammans. Spelet kan tyvärr bara visas i fullscreen på desktop.",
     ]
 }

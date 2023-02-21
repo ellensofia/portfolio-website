@@ -39,6 +39,10 @@
         &:hover {
             scale: 1.01;
         }
+
+        &__link1 {
+            white-space: nowrap;
+        }
     
         &__lower {
             display: flex;
@@ -90,7 +94,7 @@
             }
 
             &__copy.visible {
-                height: 26rem;
+                height:30rem;
                 transform: translateY(-100%);
                 margin-bottom: -26rem;
         }
@@ -107,7 +111,7 @@
             position: relative;
 
             &__copy.visible {
-                height: 35rem;
+                height: 39rem;
                 padding: 1.8rem;
                 transform: translateY(-100%);
                 margin-bottom: -35rem;
