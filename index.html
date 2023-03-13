@@ -1,254 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio website</title>
     <script src="javascript/textAnimation.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="javascript/main.js"></script>
     <script src="javascript/darkmode.js"></script>
     <script src="javascript/translate.js"></script>
     <script src="javascript/menu.js"></script>
     <script src="javascript/project.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body class="darkmode-active">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="darkmode-active">
     <header class="header">
-        <div class="header__inner">
-            <img src="assets/icons/lightmode.svg" alt="sun icon" class="darkmode" id="darkmode">
+      <div class="header__inner">
+        <img
+          src="assets/icons/lightmode.svg"
+          alt="sun icon"
+          class="darkmode"
+          id="darkmode"
+        />
 
-            <div class="header__right">
+        <div class="header__right">
+          <a href="https://github.com/ellensofia" class="header__github-link"
+            ><img
+              src="assets/icons/github-white.svg"
+              alt="icon github"
+              class="header__github-icon"
+          /></a>
 
-                <a href="https://github.com/ellensofia" class="header__github-link"><img src="assets/icons/github-white.svg" alt="icon github" class="header__github-icon"></a>
-                
-                <div class="language-button btn">
-                    <span class="sv-btn lang--active">SV</span>
-                    <span class="en-btn">EN</span>
-                </div>
+          <div class="language-button btn">
+            <span class="sv-btn lang--active">SV</span>
+            <span class="en-btn">EN</span>
+          </div>
 
-                <div class="menu__btn btn">
-                    <div class="menu__burger"></div>
-                </div>
-            </div>
+          <div class="menu__btn btn">
+            <div class="menu__burger"></div>
+          </div>
         </div>
+      </div>
     </header>
-    
+
     <nav class="menu">
-        <ul class="menu__list">
-            <li class="menu__item"><a href="#about" class="menu__link link1">Om mig</a></li>
-            <li class="menu__item"><a href="#projects" class="menu__link link2">Mina projekt</a></li>
-            <li class="menu__item"><a href="#contact" class="menu__link link3">Kontakt</a></li>
-        </ul>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#about" class="menu__link link1">Om mig</a>
+        </li>
+        <li class="menu__item">
+          <a href="#projects" class="menu__link link2">Mina projekt</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="menu__link link3">Kontakt</a>
+        </li>
+      </ul>
     </nav>
     <section class="hero">
-        <div class="hero__inner">
-            <div class="hero__copy">
-                <h4 class="hero__title hidden">Hej!   Jag heter</h4><h1 class="hero__title hidden">Ellen Dahlgren</h1>
-                <h2 class="hero__subtitle hidden">Front end developer student baserad i Göteborg</h2>
-                <a href="#contact" class="hero__btn btn hidden">Kontakta mig</a>
-            </div>
-            <a href="#about" class="hero__link-down hidden">
-                <img src="assets/icons/chevron-darkmode.svg" alt="arrow pointing down" class="hero__icon-down">
-            </a>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <h4 class="hero__title hidden">Hej! Jag heter</h4>
+          <h1 class="hero__title hidden">Ellen Dahlgren</h1>
+          <h2 class="hero__subtitle hidden">
+            Front end developer student baserad i Göteborg
+          </h2>
+          <a href="#contact" class="hero__btn btn hidden">Kontakta mig</a>
         </div>
+        <a href="#about" class="hero__link-down hidden">
+          <img
+            src="assets/icons/chevron-darkmode.svg"
+            alt="arrow pointing down"
+            class="hero__icon-down"
+          />
+        </a>
+      </div>
     </section>
 
     <div class="anchor" id="about"></div>
 
     <section class="about">
-        <div class="about__inner">
-            
-            <div class="about__copy">
-                <h2 class="about__title hidden">Om mig</h2>
-                <p class="about__text hidden">Front end student med passion för UI-design. Nu läser jag mitt första år på front end developer på medieinstitutet och kommer vara klar till våren 2024. Under min tid på medieinstitutet kommer jag ha två LIA-perioder (lärande i arbete) vilket jag verkligen ser fram emot. Sedan innan har jag en ettårig utbildning i webbdesign och webbutveckling på Karlskoga folkhögskola. Jag är en nyfiken och driven student som ständigt vill utvecklas. När jag inte sitter och kodar gillar jag att träna, resa och skulptera. Jag har alltid varit kreativt lagd och har tidigare sysslat mycket med konst och haft några utställningar. Sedan jag funnit webbdesign har jag hittat ett nytt kreativt utlopp som jag tycker är otroligt givande.</p>
-                <h4 class="about__work hidden">Arbetserfarenhet</h4>
-                <p class="about__work-text hidden">Jag har tidigare arbetat inom vården på äldreboenden och som personlig assistent. Det har gett mig vana att samarbeta med andra och att hantera stress. Jag älskar att arbeta med människor men jag har saknat möjligheten att vara kreativ på arbetstid. När jag väl hittade webbutveckling för ett par år sedan kändes det som ett självklart val.</p>
-            </div>
-            <div class="about__right">
-            <div class="language">
-                <h4 class="language__title hidden">Språk</h4>
-                <h5 class="language__sv hidden">Svenska</h5>
-                <p class="sv hidden">Modersmål</p>
-                <h5 class="language__en hidden">Engelska</h5>
-                <p class="en hidden">Flytande</p>
-            </div>
-            
-            <img src="assets/images/portrait.png" alt="portrait of Ellen Dahlgren" class="about__img">
+      <div class="about__inner">
+        <div class="about__copy">
+          <h2 class="about__title hidden">Om mig</h2>
+          <p class="about__text hidden">
+            Front end student med passion för UI-design. Nu läser jag mitt
+            första år på front end developer på medieinstitutet och kommer vara
+            klar till våren 2024. Under min tid på medieinstitutet kommer jag ha
+            två LIA-perioder (lärande i arbete) vilket jag verkligen ser fram
+            emot. Sedan innan har jag en ettårig utbildning i webbdesign och
+            webbutveckling på Karlskoga folkhögskola. Jag är en nyfiken och
+            driven student som ständigt vill utvecklas. När jag inte sitter och
+            kodar gillar jag att träna, resa och skulptera. Jag har alltid varit
+            kreativt lagd och har tidigare sysslat mycket med konst och haft
+            några utställningar. Sedan jag funnit webbdesign har jag hittat ett
+            nytt kreativt utlopp som jag tycker är otroligt givande.
+          </p>
+          <h4 class="about__work hidden">Arbetserfarenhet</h4>
+          <p class="about__work-text hidden">
+            Jag har tidigare arbetat inom vården på äldreboenden och som
+            personlig assistent. Det har gett mig vana att samarbeta med andra
+            och att hantera stress. Jag älskar att arbeta med människor men jag
+            har saknat möjligheten att vara kreativ på arbetstid. När jag väl
+            hittade webbutveckling för ett par år sedan kändes det som ett
+            självklart val.
+          </p>
+        </div>
+        <div class="about__right">
+          <div class="language">
+            <h4 class="language__title hidden">Språk</h4>
+            <h5 class="language__sv hidden">Svenska</h5>
+            <p class="sv hidden">Modersmål</p>
+            <h5 class="language__en hidden">Engelska</h5>
+            <p class="en hidden">Flytande</p>
+          </div>
+
+          <img
+            src="assets/images/portrait.png"
+            alt="portrait of Ellen Dahlgren"
+            class="about__img"
+          />
         </div>
         <div class="programming">
-            <div class="programming__inner">
-            <h4 class="hidden programming__title">Programmerin & designverktyg</h4>
+          <div class="programming__inner">
+            <h4 class="hidden programming__title">
+              Programmerin & designverktyg
+            </h4>
             <div class="hidden programming__columns">
-            <div class="hidden programming__column-1 programming__column">
+              <div class="hidden programming__column-1 programming__column">
                 <h6 class="hidden programming__item">HTML</h6>
                 <h6 class="hidden programming__item">CSS</h6>
                 <h6 class="hidden programming__item">Sass</h6>
                 <h6 class="hidden programming__item">Javascript</h6>
-            </div>
-            <div class="hidden programming__column-2 programming__column">
+              </div>
+              <div class="hidden programming__column-2 programming__column">
                 <h6 class="hidden programming__item">Wordpress</h6>
                 <h6 class="hidden programming__item">PHP</h6>
                 <h6 class="hidden programming__item">Illustrator</h6>
                 <h6 class="hidden programming__item">XD</h6>
-            </div>
-            <div class="hidden programming__column-3 programming__column">
+              </div>
+              <div class="hidden programming__column-3 programming__column">
                 <h6 class="hidden programming__item">Figma</h6>
                 <h6 class="hidden programming__item">Photoshop</h6>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-    </div>
-        </div>
+      </div>
     </section>
 
-<div class="anchor" id="projects"></div>
+    <div class="anchor" id="projects"></div>
 
     <section class="projects">
-        <div class="projects__inner">
-            <h3 class="projects__title hidden">Mina projekt</h3>
-            <h6 class="projects__subtitle hidden">Klicka på projekten för att se mer</h6>
-            <div class="projects__container">
-                <div class="project">
-                    <picture>
-                        <source media = "(max-width: 560px)" srcset="assets/images/take-n-bake-phone.png">
-                        <source media = "(max-width: 870px)" srcset="assets/images/take-n-bake-ipad.png">
-                        <source media = "(min-width: 870px)" srcset="assets/images/take-n-bake.png">
-                        <img src="" alt="" class="project__img">
-                      </picture>
-                    <div class="project__copy">
-                        <h5 class="project__title project__title6">Take 'n bake</h5>
-                        <p class="project__text project__text6">Detta är ett spel som är skapat med p5 och Javascript och koden är strukturerad på ett objektorienterat sätt. Vi arbetade i grupp och tog fram design och idé tillsammans. Spelet kan tyvärr bara visas i fullscreen på desktop.</p>
-                        <div class="project__lower">
-                            <span class="project__tools">Javascript |  P5 | HTML  |  CSS  </span>
-                            <a href="https://take-n-bake.netlify.app/"><span class="project__link1">Demo</span> <img src="assets/icons/github.svg" alt="" class="github-icon"></a>
-                        </div>                
-                    </div>
-                </div>
-                <div class="project">
-                    <picture>
-                        <source media = "(max-width: 560px)" srcset="assets/images/apple-phone.png">
-                        <source media = "(max-width: 870px)" srcset="assets/images/apple-ipad.png">
-                        <source media = "(min-width: 870px)" srcset="assets/images/apple.png">
-                        <img src="" alt="" class="project__img">
-                      </picture>
-                    <div class="project__copy">
-                        <h5 class="project__title project__title1">Apple</h5>
-                        <p class="project__text project__text1">I detta projekt arbetade vi i grupp och hade som uppgift att återskapa startsidan av en befintlig hemsida med hjälp av html och css.</p>
-                        <div class="project__lower">
-                            <span class="project__tools">HTML  |  CSS</span>
-                            <a href="https://ellensofia.github.io/apple/"><span class="project__link1">Demo</span> <img src="assets/icons/github.svg" alt="" class="github-icon"></a>
-                        </div>                
-                    </div>
-                </div>
-                <div class="project">
-                    <picture>
-                        <source media = "(max-width: 560px)" srcset="assets/images/calendar-mobile.png">
-                        <source media = "(max-width: 870px)" srcset="assets/images/calendar-ipad.png">
-                        <source media = "(min-width: 870px)" srcset="assets/images/calendar.png">
-                        <img src="" alt="" class="project__img">
-                      </picture>
-                    <div class="project__copy">
-                        <h5 class="project__title project__title5">Kalender</h5>
-                        <p class="project__text project__text5">Ett grupprojekt där vi skapade en kalender där användaren kan lägga till todos.</p>
-                        <div class="project__lower">
-                            <span class="project__tools">Javascript  |  HTML  |  CSS</span>
-                            <a href="https://ellensofia.github.io/lab-3/"><span class="project__link5">Demo</span> <img src="assets/icons/github.svg" alt="" class="github-icon"></a>
-                        </div>                
-                    </div>
-                </div>
-                <div class="project">
-                    <picture>
-                        <source media = "(max-width: 560px)" srcset="assets/images/korpen-mobile.png">
-                        <source media = "(max-width: 870px)" srcset="assets/images/korpen-ipad.png">
-                        <source media = "(min-width: 870px)" srcset="assets/images/korpen.png">
-                        <img src="" alt="" class="project__img">
-                      </picture>                    
-                      <div class="project__copy">
-                        <div>
-                            <h5 class="project__title project__title2">Korpens hantverksbutik</h5>
-                            <p class="project__text project__text2">I det här projektet arbetade vi i grupp med att modernisera en befintlig hemsida. Vi valde att göra om Korpens hantverksbutik.</p>
-                        </div>
-                        <div class="project__lower">
-                            <span class="project__tools">HTML  |  CSS  | Javascript</span>
-                            <a href="https://ellensofia.github.io/Korpen/"><span class="project__link2">Demo</span><img src="assets/icons/github.svg" alt="" class="github-icon"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <picture>
-                        <source media = "(max-width: 560px)" srcset="assets/images/game-mobile.png">
-                        <source media = "(max-width: 870px)" srcset="assets/images/game-ipad.png">
-                        <source media = "(min-width: 870px)" srcset="assets/images/textgame.png">
-                        <img src="" alt="" class="project__img">
-                      </picture>    
-                    <div class="project__copy">
-                        <div>
-                            <h5 class="project__title project__title3">Textbaserat spel</h5>
-                            <p class="project__text project__text3">Det här är en texbaserad interaktiv historia gjort med javascript.</p>
-                        </div>
-                        <div class="project__lower">
-                            <span class="project__tools">HTML  |  CSS  |  Javascript</span>
-                            <a href="https://ellensofia.github.io/Lab-1/"><span class="project__link3">Demo</span> <img src="assets/icons/github.svg" alt="" class="github-icon"></a>
-                        </div>                
-                    </div>
-                </div>
-                <div class="project">
-                    <picture>
-                        <source media = "(max-width: 560px)" srcset="assets/images/yogi-mobile.png">
-                        <source media = "(max-width: 870px)" srcset="assets/images/yogi-ipad.png">
-                        <source media = "(min-width: 870px)" srcset="assets/images/yogibear.png">
-                        <img src="" alt="" class="project__img">
-                      </picture>                        
-                      <div class="project__copy">
-                        <div>
-                            <h5 class="project__title project__title4">Yogibear</h5>
-                            <p class="project__text project__text4">Denna sida har jag kodat upp efter en befintlig XD design. Målet var att få den pixel perfekt.</p>
-                        </div>
-                        <div class="project__lower">
-                            <span class="project__tools">HTML  |  CSS</span>
-                            <a href="https://ellensofia.github.io/Yogibear/"><span class="project__link4">Demo</span> <img src="assets/icons/github.svg" alt="" class="github-icon"></a>
-                        </div>                
-                    </div>
-                </div>
+      <div class="projects__inner">
+        <h3 class="projects__title hidden">Mina projekt</h3>
+        <h6 class="projects__subtitle hidden">
+          Klicka på projekten för att se mer
+        </h6>
+        <div class="projects__container">
+          <div class="project">
+            <picture>
+              <source
+                media="(max-width: 560px)"
+                srcset="assets/images/food-finder-phone.png"
+              />
+              <source
+                media="(max-width: 870px)"
+                srcset="assets/images/food-finder-ipad.png"
+              />
+              <source
+                media="(min-width: 870px)"
+                srcset="assets/images/food-finder.png"
+              />
+              <img src="" alt="" class="project__img" />
+            </picture>
+            <div class="project__copy">
+              <h5 class="project__title project__title7">Food finder</h5>
+              <p class="project__text project__text7">
+                Detta är en React-app som skapats i grupp. Appen heter
+                Food-finder och hjälper användaren att hitta recept baserat på
+                vilka ingredienser de har hemma.
+              </p>
+              <div class="project__lower">
+                <span class="project__tools">Typescript | React | HTML </span>
+                <a href="https://papaya-lamington-fca010.netlify.app/"
+                  ><span class="project__link1">Demo</span>
+                  <img src="assets/icons/github.svg" alt="" class="github-icon"
+                /></a>
+              </div>
             </div>
+          </div>
+          <div class="project">
+            <picture>
+              <source
+                media="(max-width: 560px)"
+                srcset="assets/images/take-n-bake-phone.png"
+              />
+              <source
+                media="(max-width: 870px)"
+                srcset="assets/images/take-n-bake-ipad.png"
+              />
+              <source
+                media="(min-width: 870px)"
+                srcset="assets/images/take-n-bake.png"
+              />
+              <img src="" alt="" class="project__img" />
+            </picture>
+            <div class="project__copy">
+              <h5 class="project__title project__title6">Take 'n bake</h5>
+              <p class="project__text project__text6">
+                Detta är ett spel som är skapat med p5 och Javascript och koden
+                är strukturerad på ett objektorienterat sätt. Vi arbetade i
+                grupp och tog fram design och idé tillsammans. Spelet kan tyvärr
+                bara visas i fullscreen på desktop.
+              </p>
+              <div class="project__lower">
+                <span class="project__tools"
+                  >Javascript | P5 | HTML | CSS
+                </span>
+                <a href="https://take-n-bake.netlify.app/"
+                  ><span class="project__link1">Demo</span>
+                  <img src="assets/icons/github.svg" alt="" class="github-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <picture>
+              <source
+                media="(max-width: 560px)"
+                srcset="assets/images/apple-phone.png"
+              />
+              <source
+                media="(max-width: 870px)"
+                srcset="assets/images/apple-ipad.png"
+              />
+              <source
+                media="(min-width: 870px)"
+                srcset="assets/images/apple.png"
+              />
+              <img src="" alt="" class="project__img" />
+            </picture>
+            <div class="project__copy">
+              <h5 class="project__title project__title1">Apple</h5>
+              <p class="project__text project__text1">
+                I detta projekt arbetade vi i grupp och hade som uppgift att
+                återskapa startsidan av en befintlig hemsida med hjälp av html
+                och css.
+              </p>
+              <div class="project__lower">
+                <span class="project__tools">HTML | CSS</span>
+                <a href="https://ellensofia.github.io/apple/"
+                  ><span class="project__link1">Demo</span>
+                  <img src="assets/icons/github.svg" alt="" class="github-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <picture>
+              <source
+                media="(max-width: 560px)"
+                srcset="assets/images/calendar-mobile.png"
+              />
+              <source
+                media="(max-width: 870px)"
+                srcset="assets/images/calendar-ipad.png"
+              />
+              <source
+                media="(min-width: 870px)"
+                srcset="assets/images/calendar.png"
+              />
+              <img src="" alt="" class="project__img" />
+            </picture>
+            <div class="project__copy">
+              <h5 class="project__title project__title5">Kalender</h5>
+              <p class="project__text project__text5">
+                Ett grupprojekt där vi skapade en kalender där användaren kan
+                lägga till todos.
+              </p>
+              <div class="project__lower">
+                <span class="project__tools">Javascript | HTML | CSS</span>
+                <a href="https://ellensofia.github.io/lab-3/"
+                  ><span class="project__link5">Demo</span>
+                  <img src="assets/icons/github.svg" alt="" class="github-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <picture>
+              <source
+                media="(max-width: 560px)"
+                srcset="assets/images/korpen-mobile.png"
+              />
+              <source
+                media="(max-width: 870px)"
+                srcset="assets/images/korpen-ipad.png"
+              />
+              <source
+                media="(min-width: 870px)"
+                srcset="assets/images/korpen.png"
+              />
+              <img src="" alt="" class="project__img" />
+            </picture>
+            <div class="project__copy">
+              <div>
+                <h5 class="project__title project__title2">
+                  Korpens hantverksbutik
+                </h5>
+                <p class="project__text project__text2">
+                  I det här projektet arbetade vi i grupp med att modernisera en
+                  befintlig hemsida. Vi valde att göra om Korpens
+                  hantverksbutik.
+                </p>
+              </div>
+              <div class="project__lower">
+                <span class="project__tools">HTML | CSS | Javascript</span>
+                <a href="https://ellensofia.github.io/Korpen/"
+                  ><span class="project__link2">Demo</span
+                  ><img
+                    src="assets/icons/github.svg"
+                    alt=""
+                    class="github-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <picture>
+              <source
+                media="(max-width: 560px)"
+                srcset="assets/images/game-mobile.png"
+              />
+              <source
+                media="(max-width: 870px)"
+                srcset="assets/images/game-ipad.png"
+              />
+              <source
+                media="(min-width: 870px)"
+                srcset="assets/images/textgame.png"
+              />
+              <img src="" alt="" class="project__img" />
+            </picture>
+            <div class="project__copy">
+              <div>
+                <h5 class="project__title project__title3">Textbaserat spel</h5>
+                <p class="project__text project__text3">
+                  Det här är en texbaserad interaktiv historia gjort med
+                  javascript.
+                </p>
+              </div>
+              <div class="project__lower">
+                <span class="project__tools">HTML | CSS | Javascript</span>
+                <a href="https://ellensofia.github.io/Lab-1/"
+                  ><span class="project__link3">Demo</span>
+                  <img src="assets/icons/github.svg" alt="" class="github-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <picture>
+              <source
+                media="(max-width: 560px)"
+                srcset="assets/images/yogi-mobile.png"
+              />
+              <source
+                media="(max-width: 870px)"
+                srcset="assets/images/yogi-ipad.png"
+              />
+              <source
+                media="(min-width: 870px)"
+                srcset="assets/images/yogibear.png"
+              />
+              <img src="" alt="" class="project__img" />
+            </picture>
+            <div class="project__copy">
+              <div>
+                <h5 class="project__title project__title4">Yogibear</h5>
+                <p class="project__text project__text4">
+                  Denna sida har jag kodat upp efter en befintlig XD design.
+                  Målet var att få den pixel perfekt.
+                </p>
+              </div>
+              <div class="project__lower">
+                <span class="project__tools">HTML | CSS</span>
+                <a href="https://ellensofia.github.io/Yogibear/"
+                  ><span class="project__link4">Demo</span>
+                  <img src="assets/icons/github.svg" alt="" class="github-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <div class="anchor" id="contact"></div>
 
     <section class="contact">
-        <div class="contact__inner">
-            <h3 class="contact__title hidden">Kontakta mig</h3>
-            <div class="contact__icons">
-                <a href="https://www.linkedin.com/in/ellen-dahlgren/" class="contact__link hidden">
-                    <img src="assets/icons/linkedin-white.svg" alt="icon linked in" class="contact__linkedin">
-                    <span>Linked in</span>
-                </a>
-                <a href="mailto:ellensofiadahlgren@outlook.com" class="contact__link hidden">
-                    <img src="assets/icons/mail-white.svg" alt="mail icon" class="contact__mail">
-                    <span>ellensofiadahlgren@outlook.com</span>
-                </a>
-                <a href="" class="contact__link hidden">
-                    <img src="assets/icons/phone-white.svg" alt="phone icon" class="contact__phone">
-                    <span>0700223329</span>
-                </a>
-            </div>
+      <div class="contact__inner">
+        <h3 class="contact__title hidden">Kontakta mig</h3>
+        <div class="contact__icons">
+          <a
+            href="https://www.linkedin.com/in/ellen-dahlgren/"
+            class="contact__link hidden"
+          >
+            <img
+              src="assets/icons/linkedin-white.svg"
+              alt="icon linked in"
+              class="contact__linkedin"
+            />
+            <span>Linked in</span>
+          </a>
+          <a
+            href="mailto:ellensofiadahlgren@outlook.com"
+            class="contact__link hidden"
+          >
+            <img
+              src="assets/icons/mail-white.svg"
+              alt="mail icon"
+              class="contact__mail"
+            />
+            <span>ellensofiadahlgren@outlook.com</span>
+          </a>
+          <a href="" class="contact__link hidden">
+            <img
+              src="assets/icons/phone-white.svg"
+              alt="phone icon"
+              class="contact__phone"
+            />
+            <span>0700223329</span>
+          </a>
         </div>
+      </div>
     </section>
 
-    <footer class="footer"> 
-        <div class="footer__inner">
-            <div class="footer__copyright">
-                <span>Copyright Ellen Dahlgren, 2022 all rights reserved</span>
-            </div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__copyright">
+          <span>Copyright Ellen Dahlgren, 2022 all rights reserved</span>
         </div>
+      </div>
     </footer>
-    
-
-</body>
+  </body>
 </html>
