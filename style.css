@@ -559,15 +559,6 @@ body {
   align-items: flex-start;
   margin-bottom: var(--section-inner-gap-small);
 }
-.about .language__title {
-  margin-bottom: var(--section-inner-gap-xsmall);
-}
-.about .language__sv, .about .language__en {
-  margin: 2rem 0;
-}
-.about .language .sv, .about .language .en {
-  font-size: var(--font-size-1);
-}
 @media screen and (max-width: 60em) {
   .about__right {
     gap: var(--section-inner-gap-small);
