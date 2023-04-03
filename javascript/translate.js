@@ -72,6 +72,7 @@ function translateTo(locale) {
   const projectText6 = document.querySelector(".project__text6");
   const projectTitle7 = document.querySelector(".project__title7");
   const projectText7 = document.querySelector(".project__text7");
+  const projectText8 = document.querySelector(".project__text8");
 
   link1.innerText = translations[0];
   link2.innerText = translations[1];
@@ -111,6 +112,7 @@ function translateTo(locale) {
   projectText6.innerText = translations[31];
   projectTitle7.innerText = translations[32];
   projectText7.innerText = translations[33];
+  projectText8.innerText = translations[34];
 }
 
 /**
@@ -161,6 +163,8 @@ function innerTextInEng() {
     (projectTitle7 = "Food finder"),
     (projectText7 =
       "This is a React-app that was created as a group assignment. The app is called Food-finder and helps users find recipes based on what ingredients they have at home."),
+    (projectText8 =
+      "This is a webshop that I built with two classmates. Vi used React, Typescript and MUI to create an interface for both user and admin. Demo will be up soon."),
   ];
 }
 
@@ -213,5 +217,7 @@ function innerTextInSwe() {
     (projectTitle6 = "Food finder"),
     (projectText6 =
       "Detta är en React-app som skapats i grupp. Appen heter Food-finder och hjälper användaren att hitta recept baserat på vilka ingredienser de har hemma."),
+    (projectText8 =
+      "Detta är en webshop som jag byggt tillsammans med två klasskamrater. Vi använde oss av React, Typescript och MUI för att skapa gränssnitt för användare och admin. Demo kommer snart."),
   ];
 }

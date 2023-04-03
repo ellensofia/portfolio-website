@@ -632,7 +632,7 @@ body {
 .projects .project:hover {
   scale: 1.01;
 }
-.projects .project__link1 {
+.projects .project__link1, .projects .project__link {
   white-space: nowrap;
 }
 .projects .project__lower {
@@ -641,10 +641,11 @@ body {
   align-items: center;
   padding-top: 1.6rem;
 }
-.projects .project__lower a {
+.projects .project__lower a,
+.projects .project__lower span {
   display: flex;
   align-items: center;
-  font-size: var(--font-size-1);
+  font-size: 1.4rem;
   color: #000;
   gap: 1rem;
 }
@@ -669,7 +670,11 @@ body {
   padding: var(--section-inner-gap-xsmall);
   opacity: 1;
 }
-.projects .project__copy p, .projects .project h4, .projects .project h5, .projects .project a, .projects .project span {
+.projects .project__copy p,
+.projects .project h4,
+.projects .project h5,
+.projects .project a,
+.projects .project span {
   color: var(--color-dark);
 }
 @media screen and (max-width: 870px) {
@@ -681,8 +686,9 @@ body {
     transform: translateY(-100%);
     margin-bottom: -26rem;
   }
-  .projects .project a, .projects .project span {
-    font-size: 1.4rem;
+  .projects .project a,
+.projects .project span {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 35em) {
