@@ -31,7 +31,7 @@ function translate() {
  * @param {string} locale either "sv" or "en"
  */
 function translateTo(locale) {
-  // locale = "sv" | "en"
+  locale = "sv" | "en";
   const translations = locale === "sv" ? innerTextInSwe() : innerTextInEng();
 
   const link1 = document.querySelector(".link1");
@@ -44,11 +44,6 @@ function translateTo(locale) {
   const aboutText = document.querySelector(".about__text");
   const aboutTitle2 = document.querySelector(".about__work");
   const aboutText2 = document.querySelector(".about__work-text");
-  const langTitle = document.querySelector(".language__title");
-  const svTitle = document.querySelector(".language__sv");
-  const sv = document.querySelector(".sv");
-  const enTitle = document.querySelector(".language__en");
-  const en = document.querySelector(".en");
   const programmingTitle = document.querySelector(".programming__title");
   const projectsTitle = document.querySelector(".projects__title");
   const projectSubtitle = document.querySelector(".projects__subtitle");
@@ -84,35 +79,30 @@ function translateTo(locale) {
   aboutText.innerText = translations[7];
   aboutTitle2.innerText = translations[8];
   aboutText2.innerText = translations[9];
-  langTitle.innerText = translations[10];
-  svTitle.innerText = translations[11];
-  sv.innerText = translations[12];
-  enTitle.innerText = translations[13];
-  en.innerText = translations[14];
-  programmingTitle.innerText = translations[15];
-  projectsTitle.innerText = translations[16];
-  projectSubtitle.innerText = translations[17];
-  contactTitle.innerText = translations[18];
-  projectTitle1.innerText = translations[19];
-  projectText1.innerText = translations[20];
-  projectTitle2.innerText = translations[21];
-  projectText2.innerText = translations[22];
-  projectTitle3.innerText = translations[23];
-  projectText3.innerText = translations[24];
-  projectTitle4.innerText = translations[25];
-  projectText4.innerText = translations[26];
-  projectSeeAllLink1.innerText = translations[27];
-  projectSeeAllLink2.innerText = translations[27];
-  projectSeeAllLink3.innerText = translations[27];
-  projectSeeAllLink4.innerText = translations[27];
-  projectSeeAllLink5.innerText = translations[27];
-  projectTitle5.innerText = translations[28];
-  projectText5.innerText = translations[29];
-  projectTitle6.innerText = translations[30];
-  projectText6.innerText = translations[31];
-  projectTitle7.innerText = translations[32];
-  projectText7.innerText = translations[33];
-  projectText8.innerText = translations[34];
+  programmingTitle.innerText = translations[10];
+  projectsTitle.innerText = translations[11];
+  projectSubtitle.innerText = translations[12];
+  contactTitle.innerText = translations[13];
+  projectTitle1.innerText = translations[14];
+  projectText1.innerText = translations[15];
+  projectTitle2.innerText = translations[16];
+  projectText2.innerText = translations[17];
+  projectTitle3.innerText = translations[18];
+  projectText3.innerText = translations[19];
+  projectTitle4.innerText = translations[20];
+  projectText4.innerText = translations[21];
+  projectSeeAllLink1.innerText = translations[22];
+  projectSeeAllLink2.innerText = translations[22];
+  projectSeeAllLink3.innerText = translations[22];
+  projectSeeAllLink4.innerText = translations[22];
+  projectSeeAllLink5.innerText = translations[22];
+  projectTitle5.innerText = translations[23];
+  projectText5.innerText = translations[24];
+  projectTitle6.innerText = translations[25];
+  projectText6.innerText = translations[26];
+  projectTitle7.innerText = translations[27];
+  projectText7.innerText = translations[28];
+  projectText8.innerText = translations[29];
 }
 
 /**
@@ -133,11 +123,6 @@ function innerTextInEng() {
     (aboutTitle2 = "Work experience"),
     (aboutText2 =
       "I have previously worked in nursing homes and as a personal assistant. During this time I have developed my collaboration skills and the ability to work under pressure. I love working with people but I have missed the opportunity to be creative at work. Once I found web development a couple of years ago, it felt like an obvious choice."),
-    (langTitle = "Languages"),
-    (svTitle = "Swedish"),
-    (sv = "Native speaker"),
-    (enTitle = "English"),
-    (en = "Fluent"),
     (programmingTitle = "Programming & design tools"),
     (projectsTitle = "My projects"),
     (projectSubtitle = "Click on the project to see more"),
@@ -186,11 +171,6 @@ function innerTextInSwe() {
     (aboutTitle = "Arbetserfarenhet"),
     (aboutText2 =
       "Jag har tidigare arbetat inom vården på äldreboenden och som personlig assistent. Det har gett mig vana att samarbeta med människor och att hantera stress. Jag älskar att arbeta med människor men jag har saknat möjligheten att vara kreativ på arbetstid. När jag väl hittade webbutveckling för ett par år sedan kändes det som ett självklart val."),
-    (langTitle = "Språk"),
-    (svTitle = "Svenska"),
-    (sv = "Modersmål"),
-    (enTitle = "Engelska"),
-    (en = "Flytande"),
     (programmingTitle = "Programmering & designverktyg"),
     (projectsTitle = "Mina projekt"),
     (projectSubtitle = "Klicka på projekten för att se mer"),
