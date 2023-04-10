@@ -542,6 +542,7 @@ body {
   object-fit: contain;
   max-width: 30rem;
   min-width: 15rem;
+  margin-bottom: var(--section-inner-gap-small);
 }
 .about__copy {
   width: 40vw;
@@ -550,20 +551,7 @@ body {
 .about__copy__title {
   margin: 2rem 0;
 }
-.about__right {
-  display: flex;
-  flex-direction: row;
-  gap: 10rem;
-  flex-wrap: wrap;
-  align-items: center;
-  align-items: flex-start;
-  margin-bottom: var(--section-inner-gap-small);
-}
 @media screen and (max-width: 60em) {
-  .about__right {
-    gap: var(--section-inner-gap-small);
-    align-items: center;
-  }
   .about__inner {
     flex-direction: column;
     gap: 0;
@@ -571,6 +559,9 @@ body {
   .about__copy {
     margin-bottom: var(--section-inner-gap-small);
     width: 70vw;
+  }
+  .about__work-text {
+    margin-bottom: 0;
   }
   .about__img {
     width: auto;

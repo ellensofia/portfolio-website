@@ -27,6 +27,7 @@
     object-fit: contain;
     max-width: 30rem;
     min-width: 15rem;
+    margin-bottom: var(--section-inner-gap-small);
   }
 
   &__copy {
@@ -38,23 +39,8 @@
     }
   }
 
-  &__right {
-    display: flex;
-    flex-direction: row;
-    gap: 10rem;
-    flex-wrap: wrap;
-    align-items: center;
-    align-items: flex-start;
-    margin-bottom: var(--section-inner-gap-small);
-  }
-
   // 961px
   @include responsive.max(60em) {
-    &__right {
-      gap: var(--section-inner-gap-small);
-      align-items: center;
-    }
-
     &__inner {
       flex-direction: column;
       gap: 0;
@@ -63,6 +49,10 @@
     &__copy {
       margin-bottom: var(--section-inner-gap-small);
       width: 70vw;
+    }
+
+    &__work-text {
+      margin-bottom: 0;
     }
 
     &__img {
