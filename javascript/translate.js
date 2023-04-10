@@ -31,7 +31,6 @@ function translate() {
  * @param {string} locale either "sv" or "en"
  */
 function translateTo(locale) {
-  locale = "sv" | "en";
   const translations = locale === "sv" ? innerTextInSwe() : innerTextInEng();
 
   const link1 = document.querySelector(".link1");
