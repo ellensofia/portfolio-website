@@ -15,12 +15,25 @@ body {
   transition: 0.4s ease;
 }
 
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  transition: 0.4s ease;
+}
+
 img {
   max-width: 100%;
   display: block;
 }
 
-a, .btn {
+a,
+.btn {
   cursor: pointer;
 }
 
@@ -249,7 +262,7 @@ section {
   top: 0;
   left: 0;
   transform: translateX(0);
-  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: 0.4s ease;
   z-index: 81;
 }
 .menu__list {
@@ -322,7 +335,7 @@ section {
   z-index: 100;
   display: flex;
   align-items: center;
-  transition: 0.5s 0.5s ease;
+  transition: 0.4s ease;
 }
 .menu__burger {
   width: 2.2rem;
@@ -330,6 +343,7 @@ section {
   background-color: var(--color-primary);
   position: relative;
   top: 0.2rem;
+  transition: background-color 0.4s ease;
   transition: 0.2s ease;
 }
 .menu__burger::after, .menu__burger::before {
@@ -367,11 +381,17 @@ section {
 .header__right {
   display: flex;
   gap: 2.5rem;
+  align-items: center;
 }
 .header .darkmode {
   height: 24px;
   z-index: 100;
   cursor: pointer;
+  transition: 0.4s ease;
+}
+.header .darkmode, .header__github-icon,
+.header .language-button {
+  transition: 0.4s ease;
 }
 .header__github-icon {
   height: 2.4rem;
@@ -382,10 +402,10 @@ section {
   font-size: var(--font-size-1);
   white-space: nowrap;
   z-index: 100;
+  margin-top: 0.2rem;
 }
 .language-button .sv-btn {
   position: relative;
-  padding-right: 0.4rem;
 }
 .language-button .sv-btn::after {
   position: absolute;
@@ -797,15 +817,21 @@ body {
 /* Global Variables */
 :root {
   --section-gap: 12rem;
-  --section-inner-gap: calc( var(--section-gap) * 0.75 );
-  --section-inner-gap-small: calc( var(--section-gap) * 0.5 );
-  --section-inner-gap-xsmall: calc( var(--section-gap) * 0.25 );
-  --grid-container-projects: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(6rem, 1fr);
-  --grid-container-projects-small: minmax(3rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(3rem, 1fr);
-  --grid-container-projects-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr);
-  --grid-container: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(6rem, 1fr);
-  --grid-container-small: minmax(3rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(3rem, 1fr);
-  --grid-container-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr);
+  --section-inner-gap: calc(var(--section-gap) * 0.75);
+  --section-inner-gap-small: calc(var(--section-gap) * 0.5);
+  --section-inner-gap-xsmall: calc(var(--section-gap) * 0.25);
+  --grid-container-projects: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem)
+    [inner-end] minmax(6rem, 1fr);
+  --grid-container-projects-small: minmax(3rem, 1fr) [inner-start]
+    minmax(0, 140rem) [inner-end] minmax(3rem, 1fr);
+  --grid-container-projects-xsmall: minmax(1.5rem, 1fr) [inner-start]
+    minmax(0, 140rem) [inner-end] minmax(1.5rem, 1fr);
+  --grid-container: minmax(6rem, 1fr) [inner-start] minmax(0, 140rem)
+    [inner-end] minmax(6rem, 1fr);
+  --grid-container-small: minmax(3rem, 1fr) [inner-start] minmax(0, 140rem)
+    [inner-end] minmax(3rem, 1fr);
+  --grid-container-xsmall: minmax(1.5rem, 1fr) [inner-start] minmax(0, 140rem)
+    [inner-end] minmax(1.5rem, 1fr);
   --header-height: 6.85rem;
   --font-serif: serif;
   --font-sans: "Libre Franklin", sans-serif;
@@ -813,19 +839,19 @@ body {
   --font-scale: 1.33;
   --line-height: 1.5;
   --font-size-1: var(--font-base);
-  --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
-  --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
-  --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
-  --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
-  --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
-  --font-size-hero: calc( var(--font-size-6) * var(--font-scale) );
+  --font-size-2: calc(var(--font-size-1) * var(--font-scale));
+  --font-size-3: calc(var(--font-size-2) * var(--font-scale));
+  --font-size-4: calc(var(--font-size-3) * var(--font-scale));
+  --font-size-5: calc(var(--font-size-4) * var(--font-scale));
+  --font-size-6: calc(var(--font-size-5) * var(--font-scale));
+  --font-size-hero: calc(var(--font-size-6) * var(--font-scale));
   --color-primary: rgb(26, 26, 26);
   --color-accent: #f29a36;
   --color-bg: #f7f7f7;
 }
 
 body.darkmode-active {
-  --color-primary: rgb(232, 242, 248);
+  --color-primary: rgb(209, 215, 219);
   --color-accent: #4291ab;
   --color-bg: #1a1a1a;
 }
