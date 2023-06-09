@@ -114,7 +114,7 @@ function innerTextInEng() {
     (link2 = "My projects"),
     (link3 = "Contact"),
     (heroTitle = "Hello, I'm"),
-    (heroSubtitle = "Front end developer student based in Gothenburg"),
+    (heroSubtitle = "Front end developer student"),
     (heroBtn = "Contact me"),
     (aboutTitle = "About me"),
     (aboutText =
@@ -162,7 +162,7 @@ function innerTextInSwe() {
     (link2 = "Mina projekt"),
     (link3 = "Kontakt"),
     (heroTitle = "Hej, mitt namn är"),
-    (heroDubtitle = "Front end developer student baserad i Göteborg"),
+    (heroDubtitle = "Front end developer student"),
     (heroBtn = "Kontakta mig"),
     (aboutTitle = "Om mig"),
     (aboutText =
