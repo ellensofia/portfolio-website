@@ -44,8 +44,13 @@
 // Darkmode colors
 body.darkmode-active {
   --color-primary: rgb(209, 215, 219);
-  --color-accent: #4291ab;
-  --color-bg: #1a1a1a;
+  --color-bg: #212121;
+}
+
+p,
+a,
+span {
+  line-height: 1.5;
 }
 
 // Change margins on smaller screens

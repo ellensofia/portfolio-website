@@ -496,7 +496,7 @@ body {
 .hero__btn:hover {
   background-color: var(--color-accent);
   color: #fff;
-  border: 2px solid var(--color-accent);
+  border: 2.5px solid var(--color-accent);
 }
 @media screen and (max-width: 60em) {
   .hero__subtitle {
@@ -852,8 +852,22 @@ body {
 
 body.darkmode-active {
   --color-primary: rgb(209, 215, 219);
-  --color-accent: #4291ab;
-  --color-bg: #1a1a1a;
+  --color-bg: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+}
+
+p,
+a,
+span {
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 60em) {
