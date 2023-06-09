@@ -693,6 +693,10 @@ body {
     font-size: 1.1rem;
   }
 }
+.projects .project .flex {
+  display: flex;
+  gap: 1rem;
+}
 @media screen and (max-width: 35em) {
   .projects .project {
     width: 24rem;
@@ -853,15 +857,6 @@ body {
 body.darkmode-active {
   --color-primary: rgb(209, 215, 219);
   --color-bg: #212121;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-sans);
 }
 
 p,
