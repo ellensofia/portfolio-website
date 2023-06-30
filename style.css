@@ -803,6 +803,7 @@ body {
   }
   .contact .contact__link {
     gap: 1rem;
+    white-space: nowrap;
   }
   .contact .contact__link span {
     font-size: 1.4rem;
