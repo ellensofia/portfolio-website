@@ -9,19 +9,40 @@ function translate() {
   langBtn = document.querySelector(".language-button");
 
   if (currentLang == "sv") {
-    const svBtn = document.querySelector(".sv-btn");
-    const enBtn = document.querySelector(".en-btn");
-    svBtn.classList.remove("lang--active");
-    enBtn.classList.add("lang--active");
     currentLang = "en";
   } else if (currentLang == "en") {
-    const svBtn = document.querySelector(".sv-btn");
-    const enBtn = document.querySelector(".en-btn");
-    enBtn.classList.remove("lang--active");
-    svBtn.classList.add("lang--active");
     currentLang = "sv";
   }
+  localStorage.setItem("lang", currentLang);
+
+  setBtnLang();
   translateTo(currentLang);
+}
+
+function setBtnLang() {
+  // update the active class on the language buttons
+  const svBtn = document.querySelector(".sv-btn");
+  const enBtn = document.querySelector(".en-btn");
+
+  // Remove the active class from both buttons
+  svBtn.classList.remove("lang--active");
+  enBtn.classList.remove("lang--active");
+
+  // Add the active class to the current language button
+  if (currentLang === "sv") {
+    svBtn.classList.add("lang--active");
+  } else {
+    enBtn.classList.add("lang--active");
+  }
+}
+
+function getLangFromLocalStorage() {
+  const storedLang = localStorage.getItem("lang");
+  if (storedLang) {
+    currentLang = storedLang;
+    setBtnLang();
+    translateTo(currentLang);
+  }
 }
 
 /**
@@ -30,8 +51,10 @@ function translate() {
  * and changes the inner text of all elements
  * @param {string} locale either "sv" or "en"
  */
-function translateTo(locale) {
-  const translations = locale === "sv" ? innerTextInSwe() : innerTextInEng();
+function translateTo(lang) {
+  lang = localStorage.getItem("lang");
+
+  const translations = lang === "sv" ? innerTextInSwe() : innerTextInEng();
 
   const link1 = document.querySelector(".link1");
   const link2 = document.querySelector(".link2");
